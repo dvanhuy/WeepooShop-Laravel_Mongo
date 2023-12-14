@@ -22,7 +22,7 @@
                         <div class="status">{{ session('status') }}</div>
                     @endif
                     <div class="searchbox">
-                        <form action=" {{ route('manage.get_figures_form') }} " method="get">
+                        <form action=" {{ route('manage.get_users_form') }} " method="get">
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <input type="text" name="search" id="" placeholder="Tìm kiếm email ...">
                         </form>
@@ -61,11 +61,6 @@
                     @endforeach
                 </div>
                 {{ $users->appends(request()->except('page'))->onEachSide(1)->links('vendor.pagination.custom_pagination') }}
-                <div class="trash-button">
-                    <a href="{{route('manage.get_trash_figures_form')}}">
-                        <i class="fa-solid fa-trash-can-arrow-up"></i>
-                    </a>
-                </div>
             </div>
         </div>
     </main>

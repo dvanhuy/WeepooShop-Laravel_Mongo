@@ -106,11 +106,11 @@ class AdminController extends Controller
         $check = $userID->delete();
         if ($check) {
             return redirect()->back()->with([
-                'status' => 'Đã xóa mô hình thành công'
+                'status' => 'Đã xóa người dùng thành công'
             ]);
         }
         return redirect()->back()->with([
-            'status' => 'Xóa mô hình thất bại'
+            'status' => 'Xóa thất bại'
         ]);
     }
 }

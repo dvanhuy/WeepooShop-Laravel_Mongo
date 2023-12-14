@@ -67,13 +67,13 @@ class FigureController extends Controller
         } else {
             $figure['hinh_anh']='images/emptyFigure.webp';
         }
+        $figure['deleted_at']=null;
         $status = Figure::create($figure);
         if ($status) {
             return redirect()->back()->with([
                 'status' => 'Đã thêm mô hình thành công'
             ]);
         }
-
         return redirect()->back()->with([
             'status' => 'Thêm thất bại'
         ]);
@@ -111,7 +111,7 @@ class FigureController extends Controller
     }
     public function deleteFigure(Figure $figureID){
         // $check = $figureID->delete();
-        $figureID->deleted_at = now();
+        $figureID->deleted_at = date("Y-m-d H:i:s");
         $check = $figureID->save();
         if ($check) {
             return redirect()->back()->with([

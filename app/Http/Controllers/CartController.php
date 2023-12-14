@@ -18,8 +18,10 @@ class CartController extends Controller
         $data= [];
         for ($i=0; $i < count($carts); $i++) {
             $figure = Figure::find($carts[$i]->id_figure);
-            $carts[$i]['cart_id'] = $carts[$i]["_id"];
-            $data[$i]=($carts[$i]->toArray()+$figure->toArray());
+            if($figure){
+                $carts[$i]['cart_id'] = $carts[$i]["_id"];
+                $data[$i]=($carts[$i]->toArray()+$figure->toArray());
+            }
         }
         return view("Cart.get_list_cart", ["carts"=> $data]);
     }

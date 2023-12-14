@@ -23,5 +23,6 @@ class Figure extends Eloquent
         'chat_lieu',
         'mo_ta',
         'hinh_anh',
+        'deleted_at'
     ];
 }

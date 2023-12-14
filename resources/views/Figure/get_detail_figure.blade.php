@@ -61,8 +61,7 @@
             </div>
             <div class="material">Chất liệu : {{ $figure->chat_lieu }}</div>
             <div class="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt possimus nihil accusamus tempora harum. Repellendus, culpa dolor neque dicta quos, iusto est ipsam impedit soluta porro, nam possimus unde explicabo.
-                e dicta quos, iusto est ipsam impedit soluta porro, nam possi
+            {{ $figure->mo_ta }}
             </div>
             <div class="add_to_card">
                 <div class="numberproduct">
