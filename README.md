@@ -3,7 +3,7 @@ các lệnh cần chạy
 //////////////////////////////////////////////////////////////////////////
 sau khi clone 
 
-1   -> composer install
+1   -> composer install --ignore-platform-reqs
 
 2   -> npm install
 
