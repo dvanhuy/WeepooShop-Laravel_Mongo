@@ -63,15 +63,14 @@ class AdminController extends Controller
         return view("Admin.manageTrashFigures",["figures"=> $figures]);
     }
     public function getUsersForm(Request $request){
+        $users= User::getQuery()->where('deleted_at', null);
 
-        if($request->has("search-column") && $request->has("search-column-value")){
+        if($request->has("search")){
             // có mệnh đề where
-            $users= User::where($request->input("search-column"), 'like', '%'.$request->input("search-column-value").'%')
-                            ->orderBy('updated_at', 'desc')
-                            ->paginate(15);
-            return view("Admin.manageUsers",["users"=> $users]);
+            $users =  $users->where('email', 'like', '%'.$request->input("search").'%');
         }
-        $users= User::orderBy('updated_at', 'desc')->paginate(15);
+        $users=$users->orderBy('updated_at', 'desc');
+        $users=$users->paginate(15);
         return view("Admin.manageUsers",["users"=> $users]);
     }
 

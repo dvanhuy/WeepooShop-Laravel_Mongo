@@ -40,27 +40,27 @@
                         <div>Vai trò</div>
                         <div>Thao tác</div>
                     </div>
-                    @foreach($figures as $figure)
+                    @foreach($users as $user)
                     <div class="item-table">
-                        <div>{{ $figure['ten'] }}</div>
-                        <div>{{ number_format($figure['gia'], 0, ',', '.') }} đ</div>
+                        <div>{{ $user['email'] }}</div>
+                        <div>{{ $user['name'] }}</div>
                         <div class="img_box_item">
-                            @if (str_contains($figure['hinh_anh'], 'http'))
-                                <img src="{{ $figure['hinh_anh'] }}" >
+                            @if (str_contains($user['avatar'], 'http'))
+                                <img src="{{ $user['avatar'] }}" >
                             @else
-                                <img src="{{ asset($figure['hinh_anh']) }}" >
+                                <img src="{{ asset($user['avatar']) }}" >
                             @endif
                         </div>
-                        <div>{{ $figure['chat_lieu'] }}</div>
+                        <div>Role</div>
                         <div class="thaotac">
-                            <a href="{{ route('figures.showdetail',$figure['_id']) }}"><i class="fa-solid fa-eye"></i></a>
-                            <a href="{{ route('figures.get_form_update',$figure['_id']) }}"><i class="fa-solid fa-pen"></i></a>
-                            <a href="{{ route('figures.delete_figure',$figure['_id']) }}" onclick="return confirm('Bạn có chắn muốn xóa không?');"><i class="fa-solid fa-trash"></i></a>
+                            <!-- <a ><i class="fa-solid fa-eye"></i></a> -->
+                            <a href="{{ route('manage.get_form_update_user',$user['_id']) }}"><i class="fa-solid fa-pen"></i></a>
+                            <a href="{{ route('manage.delete_user',$user['_id']) }}" onclick="return confirm('Bạn có chắn muốn xóa không?');"><i class="fa-solid fa-trash"></i></a>
                         </div>
                     </div>
                     @endforeach
                 </div>
-                {{ $figures->appends(request()->except('page'))->onEachSide(1)->links('vendor.pagination.custom_pagination') }}
+                {{ $users->appends(request()->except('page'))->onEachSide(1)->links('vendor.pagination.custom_pagination') }}
                 <div class="trash-button">
                     <a href="{{route('manage.get_trash_figures_form')}}">
                         <i class="fa-solid fa-trash-can-arrow-up"></i>
