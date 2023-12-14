@@ -16,7 +16,7 @@
             <div class="content">
                 <div class="header-content">
                     <div class="title">
-                        Quản lý người dùng
+                        Quản lý sản phẩm (trash)
                     </div>
                     @if(Session::has('status'))
                         <div class="status">{{ session('status') }}</div>
@@ -24,20 +24,20 @@
                     <div class="searchbox">
                         <form action=" {{ route('manage.get_figures_form') }} " method="get">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                            <input type="text" name="search" id="" placeholder="Tìm kiếm email ...">
+                            <input type="text" name="search" id="" placeholder="Tìm kiếm sản phẩm ...">
                         </form>
                     </div>
-                    <a href="{{ route('figures.get_form_add') }}" class="button-add">
+                    <a href="" class="button-add">
                         <i class="fa-solid fa-plus"></i>
                         Thêm mới
                     </a>
                 </div>
                 <div class="table-data">
                     <div class="title-table">
-                        <div>Email</div>
-                        <div>Tên người dùng</div>
-                        <div>Avatar</div>
-                        <div>Vai trò</div>
+                        <div>Tên mô hình</div>
+                        <div>Giá tiền</div>
+                        <div>Hình ảnh</div>
+                        <div>Chất liệu</div>
                         <div>Thao tác</div>
                     </div>
                     @foreach($figures as $figure)
@@ -54,18 +54,13 @@
                         <div>{{ $figure['chat_lieu'] }}</div>
                         <div class="thaotac">
                             <a href="{{ route('figures.showdetail',$figure['_id']) }}"><i class="fa-solid fa-eye"></i></a>
-                            <a href="{{ route('figures.get_form_update',$figure['_id']) }}"><i class="fa-solid fa-pen"></i></a>
-                            <a href="{{ route('figures.delete_figure',$figure['_id']) }}" onclick="return confirm('Bạn có chắn muốn xóa không?');"><i class="fa-solid fa-trash"></i></a>
+                            <a href="{{ route('figures.restore',$figure['_id']) }}"><i class="fa-solid fa-trash-can-arrow-up"></i></a>
+                            <a href="{{ route('figures.deletperma',$figure['_id']) }}" onclick="return confirm('Bạn có chắn muốn xóa vĩnh viễn không?');"><i class="fa-solid fa-trash-can"></i></a>
                         </div>
                     </div>
                     @endforeach
                 </div>
                 {{ $figures->appends(request()->except('page'))->onEachSide(1)->links('vendor.pagination.custom_pagination') }}
-                <div class="trash-button">
-                    <a href="{{route('manage.get_trash_figures_form')}}">
-                        <i class="fa-solid fa-trash-can-arrow-up"></i>
-                    </a>
-                </div>
             </div>
         </div>
     </main>

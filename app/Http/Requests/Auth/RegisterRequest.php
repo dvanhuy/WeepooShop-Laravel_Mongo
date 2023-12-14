@@ -25,7 +25,7 @@ class RegisterRequest extends FormRequest
     {
         return [
             'namereg' => ['required','max:255','min:5'],
-            'emailreg' => ['required','max:255','min:5','email','unique:users,email'],
+            'emailreg' => ['required','max:255','min:5','email','unique:mongodb.users,email'],
             'passwordreg' => ['required','min:5','max:255'],
         ];
     }

@@ -24,7 +24,7 @@ class ForgotPassRequest extends FormRequest
     public function rules()
     {
         return [
-            'email' => ['required','max:255','min:5','email','exists:users,email'],
+            'email' => ['required','max:255','min:5','email','exists:mongodb.users,email'],
         ];
     }
 

@@ -3,12 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
-
-class BillDetail extends Model
+use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
+class BillDetail extends Eloquent
 {
     use HasFactory;
-    protected $table = "billdetail";
+    protected $connection = 'mongodb';
+    protected $collection = "billdetail";
     protected $fillable = [
         "id_bill",
         "id_figure",

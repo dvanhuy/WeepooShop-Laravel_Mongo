@@ -94,7 +94,7 @@
         function addcart(){
             if ("{{ Auth::check() }}"){
                 const id_user="{{ Auth::id() }}"
-                const id_figure ="{{ $figure->id }}"
+                const id_figure ="{{ $figure->_id }}"
                 const so_luong=document.querySelector('.numberinput').value
                 $.ajax({
                     url: "{{ route('cart.add') }}",

@@ -40,24 +40,24 @@
             <div>Thao tác</div>
         </div>
         @foreach($details as $detail)
-        <div class="item_figure box_gird" id="{{ $detail->billdetail_id }}">
-            <a style="color: black; text-decoration: none;" href="{{ route('figures.showdetail',$detail->id_figure) }}">
+        <div class="item_figure box_gird" id="{{ $detail['billdetail_id'] }}">
+            <a style="color: black; text-decoration: none;" href="{{ route('figures.showdetail',$detail['id_figure']) }}">
                 <div class="info_item">
                     <div class="img_item">
-                        @if (str_contains($detail->hinh_anh, 'http'))
-                            <img src="{{ $detail->hinh_anh }}" >
+                        @if (str_contains($detail['hinh_anh'], 'http'))
+                            <img src="{{ $detail['hinh_anh'] }}" >
                         @else
-                            <img src="{{ asset($detail->hinh_anh) }}" >
+                            <img src="{{ asset($detail['hinh_anh']) }}" >
                         @endif
                     </div>
-                    <div class="name_item">{{ $detail->ten }}</div>
+                    <div class="name_item">{{ $detail['ten'] }}</div>
                 </div>
             </a>
-            <div >{{ number_format($detail->gia, 0, ',', '.') }} VNĐ</div>
+            <div >{{ number_format($detail['gia'], 0, ',', '.') }} VNĐ</div>
             <div class="number">
-                <div>{{ $detail->so_luong }}</div>
+                <div>{{ $detail['so_luong'] }}</div>
             </div>
-            <div class="price" >{{ number_format($detail->gia*$detail->so_luong, 0, ',', '.') }} VNĐ</div>
+            <div class="price" >{{ number_format($detail['gia']*$detail['so_luong'], 0, ',', '.') }} VNĐ</div>
             <div>Chi tiết</div>
         </div> 
         @endforeach

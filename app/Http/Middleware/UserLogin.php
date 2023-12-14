@@ -20,6 +20,6 @@ class UserLogin
         if (Auth::check()) {
             return $next($request);
         }        
-        return redirect()->route('get_home_page');
+        return redirect()->route('get_form_login');
     }
 }

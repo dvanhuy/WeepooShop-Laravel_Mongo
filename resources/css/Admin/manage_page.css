@@ -1,123 +1,219 @@
-body{
-    border-top: 1px solid black;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-h1.page_title{
-    width: 93%;
-    margin: auto;
-    padding: 20px;
-}
-
-.header_name_search{
-    position: relative;
-    width: 93%;
-    margin: auto;
-    padding: 20px;
-}
-.header_name_search select{
-    margin-left: 10px;
-    font-size: 0.95rem;
-    padding: 5px;
-}
-
-#search_input_lable{
-    margin-left: 30px;
-}
-
-#search_input{
-    margin-left: 10px;
-    font-size: 0.95rem;
-    padding: 5px;
-}
-#button_search{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-left: 10px;
-    border: 1px solid black;
-}
-#button_search:hover{
-    background-color: rgb(180, 180, 180);
-}
-
-.addfigure{
-    padding: 10px 20px;
-    background-color: #a3ffa6;
-    display: inline-block;
-    color: black;
-    font-size: 1.1rem;
-    border: 1px solid black;
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.container_table{
-    overflow-x  : visible;
-    padding-left: 4%;
-}
-
-.container_table table{
-    border-spacing: 0;
-    border: 1px solid black;
-}
-
-.container_table tr th{
-    min-width: 100px;
-    text-align: center;
-    font-size: 1.2rem;
-    height: 80px;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-    padding: 0px 10px;
-}
-
-.container_table tr td{
-    text-align: center;
-    border-right: 1px solid black;
-    border-bottom: 1px solid rgb(124, 124, 124);
-    padding: 10px 10px;
-}
-
-.container_table tr td p{
-    min-width: 100px;
-    max-width: 300px;
-    height: 100px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-
-.container_table tr td div.action{
-    width: 100px;
-    display: flex;
-    gap: 1px;
-}
-
-.container_table tr td a{
+a{
     text-decoration: none;
-    padding: 10px;
-    background-color: white;
-    border: 1px solid black;
-}
-.container_table tr td a.update{
     color: black;
 }
-.container_table tr td a.delete{
-    color: red;
+
+/* set witdh */
+.title-table,.item-table{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr;
 }
 
-.container_table tr th:last-child{
-    border-right: none;
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
 }
-.container_table tr td:last-child{
-    border-right: none;
+.first-container{
+    position: relative;
+    width: 20%;
+    height: 100%;
 }
 
-.container_table table tr > td:first-child,
-.container_table table tr > th:first-child{
-    position: sticky;
-    left: 0;
-    background-color: rgb(110, 255, 158);
+.second-container{
+    width: calc(100% - 20%);
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(248, 248, 248);
+}
+.logo{
+    font-weight: bold;
+    font-size: 40px;
+    margin: 40px 50px;
+    user-select: none;
+}
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    padding-left: 30px;
+    user-select: none;
+}
+li .icon{
+    font-size: 22px;
+    color: #686868;
+}
+li .text-menu{
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+
+
+li.active{
+    background-color: rgba(241, 224, 255, 0.812);
+    border-right: 5px solid rgb(174, 74, 255);
+}
+
+
+.backbutton{
+    bottom: 20px;
+    left: 20px;
+    position: absolute;
+    background-color: #7166f9;
+    text-decoration: none;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 40px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+
+/* /////////////////////////////////////// */
+
+.content{
+    margin-top: 100px;
+    margin: 100px 30px;
+    position: relative;
+}
+.header-content{
+    position: relative;
+}
+.header-content .title{
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+}
+.header-content .status{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 42, 42);
+    margin-left: 10px;
+}
+.header-content .searchbox{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 150px;
+    top: 0;
+    gap: 10px;
+    height: 40px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    color: #656565;
+    border-radius: 10px;
+}
+.header-content .searchbox input{
+    outline: none;
+    border: 0;
+    background-color: transparent;
+}
+.header-content .button-add{
+    position: absolute;
+    background-color: #7166f9;
+    text-decoration: none;
+    color: white;
+    right: 0;
+    top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 40px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 10px;
+}
+.table-data{
+    margin-top: 30px;
+    background-color: white;
+    padding: 40px;
+}
+
+
+.title-table{
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(209, 209, 209);
+}
+.title-table :first-child,.item-table :first-child{
+    text-align: left;
+}
+
+.table-data .item-table:last-child{
+    border-bottom: 0;
+}
+
+.item-table{
+    padding: 20px 0px;
+    text-align: center;
+    border-bottom: 2px solid rgb(209, 209, 209);
+    align-items: center;
+}
+.thaotac{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.thaotac a{
+    padding: 5px;
+    background-color: #eeeeee;
+    color: rgb(97, 97, 97);
+    border-radius: 50%;
+}
+.thaotac a:hover{
+    background-color: #c1c1c1;
+    color: rgb(50, 50, 50);
+}
+
+.img_box_item{
+    max-height: 80px;
+    max-width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.img_box_item img{
+    height: 100%;
+}
+
+.trash-button{
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-color: #7166f9;
+    text-decoration: none;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.trash-button i{
+    color: white;
 }

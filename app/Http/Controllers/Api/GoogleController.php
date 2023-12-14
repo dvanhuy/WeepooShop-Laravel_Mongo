@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Laravel\Socialite\Facades\Socialite;
+use Illuminate\Support\Str;
 
 class GoogleController extends Controller
 {
@@ -33,7 +34,7 @@ class GoogleController extends Controller
                 'social_id'=> $googleUser->id,
                 'social_type' => 'google',
                 'email_verified_at'=> now(),
-                'password' => "0",
+                'password' => bcrypt(Str::random(10)),
                 'avatar' => $googleUser->avatar,
             ];
 

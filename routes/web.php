@@ -83,6 +83,9 @@ Route::group(['middleware'=>'userLogin'],function (){
     Route::group(['middleware'=>'isAdminRole'],function (){
         Route::group(['prefix'=> 'manage/figures'], function () {
             Route::get('', [AdminController::class,'getFiguresForm'])->name('manage.get_figures_form');
+            Route::get('trash', [AdminController::class,'getTrashFiguresForm'])->name('manage.get_trash_figures_form');
+            Route::get('restore/{figureID}', [FigureController::class,'restoreFigure'])->name('figures.restore');
+            Route::get('deletperma/{figureID}', [FigureController::class,'deletpermaFigure'])->name('figures.deletperma');
             Route::get('add', [FigureController::class,'getFormAddFigure'])->name('figures.get_form_add');
             Route::post('add', [FigureController::class,'addFigure'])->name('figures.add_figure');
             Route::get('update/{figureID}', [FigureController::class,'getFormUpdateFigure'])->name('figures.get_form_update');

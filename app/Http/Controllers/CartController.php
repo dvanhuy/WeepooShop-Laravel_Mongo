@@ -9,17 +9,19 @@ use App\Models\Cart;
 use App\Models\Figure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-
 class CartController extends Controller
 {
     //
     public function index()
     {
-        $carts = Cart::where("id_user", Auth::id())
-            ->join('figures', 'cartstore.id_figure', '=', 'figures.id')
-            ->select('cartstore.id as cart_id', 'cartstore.*', 'figures.*')
-            ->get();
-        return view("Cart.get_list_cart", ["carts"=> $carts]);
+        $carts = Cart::where("id_user", Auth::id())->get();
+        $data= [];
+        for ($i=0; $i < count($carts); $i++) {
+            $figure = Figure::find($carts[$i]->id_figure);
+            $carts[$i]['cart_id'] = $carts[$i]["_id"];
+            $data[$i]=($carts[$i]->toArray()+$figure->toArray());
+        }
+        return view("Cart.get_list_cart", ["carts"=> $data]);
     }
     public function add(AddCardRequest $request){
         // Xử lý dữ liệu
@@ -91,11 +93,10 @@ class CartController extends Controller
 
     public function pay(Request $request){
         $cartIDs = explode(',', $request->input('cartIDs'));
-        $carts = Cart::whereIn('id',  $cartIDs)->get();
+        $carts = Cart::whereIn('_id',  $cartIDs)->get();
 
         // Thêm vào bảng hóa đơn
         $bill = Bill::create([
-            'thoi_gian_thanh_toan' => now(),
             'trang_thai' => 'Đang giao',
             'id_user' => $carts[0]->id_user,
             'hinh_anh'=>'images/emptyFigure.webp'

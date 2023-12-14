@@ -197,6 +197,7 @@ return [
 
 
         Laravel\Socialite\SocialiteServiceProvider::class,
+        Jenssegers\Mongodb\MongodbServiceProvider::class,
     ],
 
     /*

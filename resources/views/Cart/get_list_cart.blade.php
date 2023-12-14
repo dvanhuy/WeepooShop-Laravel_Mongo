@@ -67,28 +67,28 @@
             <div>Số tiền</div>
             <div>Thao tác</div>
         </div>
-        @foreach($carts as $cart)
-        <div class="item_figure box_gird {{ $cart->deleted_at ? 'disable_container' : ''  }} {{ $cart->so_luong_hien_con < $cart->so_luong ? 'requireUpdate' : '' }}" id="{{ $cart->cart_id }}">
-            <a style="color: black; text-decoration: none;" href="{{ route('figures.showdetail',$cart->id_figure) }}">
+        @for ($i = 0; $i < count($carts); $i++)
+        <div class="item_figure box_gird {{ $carts[$i]['deleted_at'] ? 'disable_container' : ''  }} {{ $carts[$i]['so_luong_hien_con'] < $carts[$i]['so_luong'] ? 'requireUpdate' : '' }}" id="{{ $carts[$i]['cart_id'] }}">
+            <a style="color: black; text-decoration: none;" href="{{ route('figures.showdetail',$carts[$i]['id_figure']) }}">
                 <div class="info_item">
-                    <input type="checkbox" value="{{ $cart->cart_id }}" onchange="calcprice()">
+                    <input type="checkbox" value="{{ $carts[$i]['cart_id'] }}" onchange="calcprice()">
                     <div class="img_item">
-                        <img src="{{ $cart->hinh_anh }}" >
+                        <img src="{{ $carts[$i]['hinh_anh'] }}" >
                     </div>
-                    <div class="name_item">{{ $cart->ten }}</div>
+                    <div class="name_item">{{ $carts[$i]['ten'] }}</div>
                 </div>
             </a>
-            <div >{{ number_format($cart->gia, 0, ',', '.') }} VNĐ</div>
+            <div >{{ number_format($carts[$i]['gia'], 0, ',', '.') }} VNĐ</div>
             <div class="number">
-                <div class="buttonupdate" onclick="changeNumberCart('{{ $cart->cart_id }}',-1,'{{ $cart->gia }}')">-</div>
-                <div class="get_so_luong" id="so_luong_{{ $cart->cart_id }}">{{ $cart->so_luong }}</div>
-                <div class="buttonupdate" onclick="changeNumberCart('{{ $cart->cart_id }}',1,'{{ $cart->gia }}')">+</div>
-                <span class="so_luong_con">Còn {{ $cart->so_luong_hien_con }} sản phẩm</span>
+                <div class="buttonupdate" onclick="changeNumberCart(`{{ $carts[$i]['cart_id'] }}`,-1,`{{ $carts[$i]['gia'] }}`)">-</div>
+                <div class="get_so_luong" id="so_luong_{{ $carts[$i]['cart_id'] }}">{{ $carts[$i]['so_luong'] }}</div>
+                <div class="buttonupdate" onclick="changeNumberCart(`{{ $carts[$i]['cart_id'] }}`,+1,`{{ $carts[$i]['gia'] }}`)">+</div>
+                <span class="so_luong_con">Còn {{ $carts[$i]['so_luong_hien_con'] }} sản phẩm</span>
             </div>
-            <div class="price" data-total="{{ $cart->gia*$cart->so_luong }}" >{{ number_format($cart->gia*$cart->so_luong, 0, ',', '.') }} VNĐ</div>
-            <div class="button_delete" onclick="removeCart('{{ $cart->cart_id }}')">Xóa</div>
+            <div class="price" data-total="{{ $carts[$i]['gia']*$carts[$i]['so_luong'] }}" >{{ number_format($carts[$i]['gia']*$carts[$i]['so_luong'], 0, ',', '.') }} VNĐ</div>
+            <div class="button_delete" onclick="removeCart(`{{ $carts[$i]['cart_id'] }}`)">Xóa</div>
         </div> 
-        @endforeach
+        @endfor
     </main> 
     <div class="footer_fixed">
         <div class="totalprice">

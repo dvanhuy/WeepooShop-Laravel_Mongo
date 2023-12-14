@@ -3,14 +3,13 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 
-class Cart extends Model
+class Cart extends Eloquent
 {
     use HasFactory;
-    
-    protected $table = "cartstore";
-    protected $primaryKey = 'id';
+    protected $connection = 'mongodb';
+    protected $collection = "cartstore";
     protected $fillable = [
         "id_user",
         "id_figure",

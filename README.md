@@ -42,3 +42,13 @@ vendor\laravel\framework\src\Illuminate\Foundation\Console\StorageLinkCommand.ph
 rm public/storage
 vendor\laravel\framework\src\Illuminate\Foundation\Console\ServeCommand.php
 php artisan serve --port=8080
+composer require jenssegers/mongodb --ignore-platform-reqs
+
+///////////////////////
+
+tải 
+https://pecl.php.net/package/mongodb
+-> chọn file có dll
+chọn theo phiên bản php
+tải về bỏ file dll vô php/ext/.
+thêm extension= "tenfile".dll -> vào file php.ini

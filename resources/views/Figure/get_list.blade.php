@@ -43,26 +43,26 @@
             </div>
         </div>
         <div class="container_main">
-            @foreach($figures as $figure)
-            <a class="container_main_item" href="{{ route('figures.showdetail',$figure->id) }}">
+            @for ($i = 0; $i < count($figures); $i++)
+            <a class="container_main_item" href="{{ route('figures.showdetail',$figures[$i]['_id']) }}">
                 <div class="item_image">
-                    @if (str_contains($figure->hinh_anh, 'http'))
-                        <img src="{{ $figure->hinh_anh }}" >
+                    @if (str_contains($figures[$i]['hinh_anh'], 'http'))
+                        <img src="{{ $figures[$i]['hinh_anh'] }}" >
                     @else
-                        <img src="{{ asset($figure->hinh_anh) }}" >
+                        <img src="{{ asset($figures[$i]['hinh_anh']) }}" >
                     @endif
                 </div>
                 <div class="item_name">
-                    {{$figure->ten}}
+                    {{$figures[$i]['ten']}}
                 </div>
                 <div class="item_price">
-                    {{ number_format($figure->gia, 0, ',', '.') }} VNĐ
+                    {{ number_format($figures[$i]['gia'], 0, ',', '.') }} VNĐ
                 </div>
                 <div class="item_subprice">
-                    {{$figure->updated_at}}
+                    {{$figures[$i]['updated_at']}}
                 </div>
             </a>
-            @endforeach
+            @endfor
         </div>
         {{ $figures->appends(request()->except('page'))->links('vendor.pagination.custom_pagination') }}
     </main>

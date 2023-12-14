@@ -3,13 +3,14 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Bill extends Model
+class Bill extends Eloquent
 {
     use HasFactory,SoftDeletes;
-    protected $table = "bills";
+    protected $connection = 'mongodb';
+    protected $collection = "bills";
     protected $fillable = [
         "dia_chi",
         "so_dien_thoai",

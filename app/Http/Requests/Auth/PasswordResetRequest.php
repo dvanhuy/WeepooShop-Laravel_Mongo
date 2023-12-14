@@ -25,7 +25,7 @@ class PasswordResetRequest extends FormRequest
     {
         return [
             'tokenreset' => ['required'],
-            'email' => ['required','max:255','min:5','email','exists:password_resets,email'],
+            'email' => ['required','max:255','min:5','email','exists:mongodb.password_resets,email'],
             'newpassword' => ['required','min:5','max:255'],
             'confirmpassword' => ['required','min:5','max:255'],
         ];

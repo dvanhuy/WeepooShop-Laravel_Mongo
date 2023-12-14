@@ -13,37 +13,54 @@ class AdminController extends Controller
 {
     public function getFiguresForm(Request $request){
         $figures= Figure::getQuery()->where('deleted_at', null);
-
-        if($request->has("search-column") && $request->has("search-column-value")){
+        if($request->has("search")){
             // có mệnh đề where
-            $figures =  $figures->where($request->input("search-column"), 'like', '%'.$request->input("search-column-value").'%');
+            $figures =  $figures->where('ten', 'like', '%'.$request->input("search").'%');
         }
-
-        if($request->has("order")){
-            //có tham số order -> nhấn vào nút tìm
-            switch ($request->input("order")) {
-                case 'priceasc':
-                    $figures = $figures->orderByRaw('gia * 1 asc');
-                    break;
-                case 'pricedesc':
-                    $figures = $figures->orderByRaw('gia * 1 desc');
-                    break;
-                case 'oldest':
-                    $figures = $figures->orderBy('updated_at', 'asc');
-                    break;
-                case 'recently':
-                    $figures = $figures->orderBy('updated_at', 'desc');
-                    break;
-                default:
-                    $figures = $figures->orderBy('updated_at', 'desc');
-            }
-        }
-        else {
-            $figures = $figures->orderBy('updated_at', 'desc');
-        }
-        
-        $figures=$figures->paginate(30);
+        $figures=$figures->orderBy('updated_at', 'desc');
+        $figures=$figures->paginate(10);
         return view("Admin.manageFigures",["figures"=> $figures]);
+        // if($request->has("search-column") && $request->has("search-column-value")){
+        //     // có mệnh đề where
+        //     $figures =  $figures->where($request->input("search-column"), 'like', '%'.$request->input("search-column-value").'%');
+        // }
+
+        // if($request->has("order")){
+        //     //có tham số order -> nhấn vào nút tìm
+        //     switch ($request->input("order")) {
+        //         case 'priceasc':
+        //             $figures = $figures->orderByRaw('gia * 1 asc');
+        //             break;
+        //         case 'pricedesc':
+        //             $figures = $figures->orderByRaw('gia * 1 desc');
+        //             break;
+        //         case 'oldest':
+        //             $figures = $figures->orderBy('updated_at', 'asc');
+        //             break;
+        //         case 'recently':
+        //             $figures = $figures->orderBy('updated_at', 'desc');
+        //             break;
+        //         default:
+        //             $figures = $figures->orderBy('updated_at', 'desc');
+        //     }
+        // }
+        // else {
+        //     $figures = $figures->orderBy('updated_at', 'desc');
+        // }
+        
+        // $figures=$figures->paginate(30);
+        // return view("Admin.manageFigures",["figures"=> $figures]);
+    }
+
+    public function getTrashFiguresForm(Request $request){
+        $figures= Figure::getQuery()->whereNotNull('deleted_at');
+        if($request->has("search")){
+            // có mệnh đề where
+            $figures =  $figures->where('ten', 'like', '%'.$request->input("search").'%');
+        }
+        $figures=$figures->orderBy('updated_at', 'desc');
+        $figures=$figures->paginate(10);
+        return view("Admin.manageTrashFigures",["figures"=> $figures]);
     }
     public function getUsersForm(Request $request){
 

@@ -32,6 +32,7 @@
     pointer-events: none;
 }
 </style>
+
 @if ($paginator->hasPages())
     <div class="footer_main">
         <div class="pagination">

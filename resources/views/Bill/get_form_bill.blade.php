@@ -44,13 +44,13 @@
             <div>Thao tác</div>
         </div>
         @foreach($bills as $bill)
-        <div class="item_figure box_gird" id="{{ $bill->id }}">
+        <div class="item_figure box_gird" id="{{ $bill->_id }}">
             <div class="info_item">
                 <div class="img_item">
                     <img src="{{ $bill->hinh_anh }}" >
                 </div>
             </div>
-            <div> {{ $bill->thoi_gian_thanh_toan }}</div>
+            <div> {{ $bill->updated_at }}</div>
             <div> {{ $bill->trang_thai }}</div>
             <div class="price" >{{ number_format($bill->tong_tien, 0, ',', '.') }} VNĐ</div>
             <a class="detail" href="{{ route('bill.detail',$bill->id) }}" >Xem chi tiết</a>

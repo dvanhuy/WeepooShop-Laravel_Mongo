@@ -13,7 +13,7 @@ class FigureController extends Controller
     //
     public function index(Request $request)
     {
-        $figures= Figure::getQuery();
+        $figures= Figure::getQuery()->where('deleted_at', null);
 
         if($request->has("search-column") && $request->has("search-column-value")){
             // có mệnh đề where
@@ -44,6 +44,7 @@ class FigureController extends Controller
         }
         
         $figures=$figures->paginate(30);
+
         return view("Figure.get_list",["figures"=>$figures]);
     }
 
@@ -109,7 +110,9 @@ class FigureController extends Controller
         ]);
     }
     public function deleteFigure(Figure $figureID){
-        $check = $figureID->delete();
+        // $check = $figureID->delete();
+        $figureID->deleted_at = now();
+        $check = $figureID->save();
         if ($check) {
             return redirect()->back()->with([
                 'status' => 'Đã xóa mô hình thành công'
@@ -119,5 +122,29 @@ class FigureController extends Controller
             'status' => 'Xóa mô hình thất bại'
         ]);
 
+    }
+
+    public function restoreFigure(Figure $figureID){
+        $figureID->deleted_at = null;
+        $check = $figureID->save();
+        if ($check) {
+            return redirect()->back()->with([
+                'status' => 'Đã phục hồi thành công'
+            ]);
+        }
+        return redirect()->back()->with([
+            'status' => 'Phục hồi thất bại'
+        ]);
+    }
+    public function deletpermaFigure(Figure $figureID){
+        $check = $figureID->delete();
+        if ($check) {
+            return redirect()->back()->with([
+                'status' => 'Đã xóa thành công'
+            ]);
+        }
+        return redirect()->back()->with([
+            'status' => 'Xóa thất bại'
+        ]);
     }
 }

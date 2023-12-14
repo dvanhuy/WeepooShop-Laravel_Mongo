@@ -54,7 +54,7 @@
                 <h1>Đăng nhập</h1>
                 <div class="social-icons">
                     <a href="{{ route('login_with_google') }}" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="{{ route('login_with_facebook') }}" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <!-- <a href="{{ route('login_with_facebook') }}" class="icon"><i class="fa-brands fa-facebook-f"></i></a> -->
                     <!-- <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
                     <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a> -->
                 </div>
