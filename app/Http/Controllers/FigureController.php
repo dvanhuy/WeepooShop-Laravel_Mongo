@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\Figure\AddFigureRequest;
 use App\Models\Figure;
+use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
@@ -62,8 +63,10 @@ class FigureController extends Controller
     {
         $figure = $request->validated();
         if ($request->hasFile('hinh_anh')) {
-            $path = Storage::disk('public')->put("images", $request->file('hinh_anh'));
-            $figure['hinh_anh']='storage/'.$path;
+            $uploadedFileUrl = Cloudinary::upload($request->file('hinh_anh')->getRealPath())->getSecurePath();
+            // Cloudinary::uploadApi()
+            // $uploadedFileUrl['public_id'];
+            $figure['hinh_anh'] =  $uploadedFileUrl;
         } else {
             $figure['hinh_anh']='images/emptyFigure.webp';
         }
@@ -85,16 +88,16 @@ class FigureController extends Controller
 
     public function updateFigure(AddFigureRequest $request,Figure $figureID)
     {
-
         $figure = $request->validated();
         if ($request->hasFile('hinh_anh')) {
             //xóa ảnh cũ
             $old_image_path = $figureID['hinh_anh'];
-            if(File::exists($old_image_path) && $old_image_path != 'images/emptyFigure.webp') {
-                File::delete($old_image_path);
+            if($old_image_path != null && $old_image_path != 'images/emptyFigure.webp') {
+                preg_match("/upload\/(?:v\d+\/)?([^\.]+)/", $old_image_path, $matches);
+                Cloudinary::uploadApi()->destroy($matches[1]);
             }
-            $new_image_path = Storage::disk('public')->put("images/figures", $request->file('hinh_anh'));
-            $figure['hinh_anh']='storage/'.$new_image_path;
+            $uploadedFileUrl = Cloudinary::upload($request->file('hinh_anh')->getRealPath())->getSecurePath();
+            $figure['hinh_anh'] =  $uploadedFileUrl;
         } 
         // else {
         //     $figure['hinh_anh']='images/emptyFigure.webp';
