@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Api\FacebookController;
 use App\Http\Controllers\Api\GoogleController;
+use App\Http\Controllers\Api\VNPAYController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BillController;
 use App\Http\Controllers\CartController;
@@ -74,8 +75,12 @@ Route::group(['middleware'=>'userLogin'],function (){
         Route::get('delete/{cart_id}', [CartController::class,'delete'])->name('cart.delete');
         Route::get('update', [CartController::class,'update'])->name('cart.update');
         Route::get('pay', [CartController::class,'getFormPay'])->name('cart.get_form_pay');
-        Route::post('pay', [CartController::class,'pay'])->name('cart.pay');
     });
+
+
+    Route::get('vnpay/pay', [VNPAYController::class,'pay'])->name('vnpay.pay');
+    Route::get('/vnpay_php/checkout',[VNPAYController::class,'checkout'])->name('vnpay.checkout');
+
     Route::group(['prefix'=> 'bill'], function () {
         Route::get('', [BillController::class,'index'])->name('bill.index');
         Route::get('/{billID}', [BillController::class,'getdetailform'])->name('bill.detail');

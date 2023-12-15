@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thanh toán</title>
-    <meta name="csrf-token" content="{{ csrf_token() }}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="{{ asset('css/get_form_pay.css')}}">
 </head>
 <body style="text-align: center;">
-    <form action="" method="get">
+    <form action="{{route('vnpay.pay')}}" method="get">
+    @csrf
+        <input type="hidden" name="cartIDs" id="cartIDs">
+        <input type="hidden" name="totalmoney" value="{{$totalmoney}}">
         <div class="content">
             <h1>Thông tin đã chọn</h1>
                 <div class="item-title">
@@ -49,7 +51,7 @@
                     <label for="vnpay"><div>Thanh toán VNPAY</div></label>
                 </div>
             </div>
-            <button class="buttonsubmit" onclick="pay()">Xác nhận</button>
+            <button class="buttonsubmit">Xác nhận</button>
             <span class="backbutton">
                 Hoặc <a href="{{ route('cart.index') }}">Trở về</a>
             </span>
@@ -57,26 +59,10 @@
     </form>
 </body>
 <script>
-    function pay(){
-        const queryString = window.location.search;
-        const urlParams = new URLSearchParams(queryString);
-        const cartIDs = urlParams.get('cartIDs')
-        $.ajax({
-            url: "/cart/pay",
-            method: "POST",
-            data: {
-                "_token": "{{ csrf_token() }}",
-                "cartIDs" : cartIDs,
-            },
-            dataType: "json",
-            success: function (data) {
-                alert(data.message)
-                window.location.href = "{{ route('get_home_page') }}";
-            },
-            error: function (xhr, ajaxOptions, thrownError) {
-                console.log(thrownError);
-            }
-        });
-    }
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const cartIDs = urlParams.get('cartIDs');
+    const data = document.getElementById("cartIDs")
+    data.value = cartIDs
 </script>
 </html>
