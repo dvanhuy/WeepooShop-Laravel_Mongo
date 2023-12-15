@@ -1,0 +1,126 @@
+body{
+    background-color: rgb(245, 245, 245);
+}
+.content{
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    width: 700px;
+    gap: 10px;
+    flex-direction: column;
+    padding: 20px;
+}
+.item-title{
+    display: grid;
+    background-color: rgb(245, 245, 245);
+    grid-template-columns: 2.5fr 1fr 1fr;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.item-footer div{
+    text-align: center;
+}
+
+.item-footer div:first-child{
+    text-align: right;
+    padding-right: 20px;
+}
+
+.item-footer{
+    display: grid;
+    background-color: rgb(245, 245, 245);
+    grid-template-columns: 3.5fr 1fr;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: right;
+}
+
+.item{
+    display: grid;
+    grid-template-areas: "img name number total"
+                        "img price number total";
+    grid-template-columns: 1fr 1.5fr 1fr 1fr;
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1.05rem;
+}
+.item .img{
+    height: 100px;
+    overflow: hidden;
+    grid-area: img;
+}
+.item .img img{
+    height: 100%;
+}
+.item .name{
+    text-align: left;
+    word-wrap: break-word;
+    grid-area: name;
+}
+.item .dongia{
+    text-align: left;
+    grid-area: price;
+}
+.item .tongtien{
+    grid-area: total;
+}
+
+/* ////////////////// */
+
+.payments_choose{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 100px;
+    gap: 20px;
+}
+
+.payments_choose input{
+    display: none;
+}
+.payments_choose label div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+    width: 100%;
+    border: 3px solid #a6a6a6;;
+    height: 100%;
+}
+.payments_choose input:checked + label div{
+    border: 3px solid #7166f9;
+    background-color: rgb(242, 242, 242);
+}
+
+.buttonsubmit{
+    margin-top: 20px;
+    border: none;
+    display: block;
+    background-color: #7166f9;
+    color: white;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+}
+.backbutton{
+    font-size: 1.1rem;
+}

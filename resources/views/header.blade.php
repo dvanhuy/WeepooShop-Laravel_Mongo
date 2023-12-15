@@ -13,7 +13,15 @@
                 <a href="{{ route('cart.index') }}" class="cart"><i class="fas fa-shopping-cart"></i></a>
             </ul>
             <div class="avatar" onclick="tooglemenu()">
-                <img src="{{ asset('images/avatardefault.png') }}">
+                @if (Auth::check())
+                    @if (str_contains( Auth::user()->avatar, 'http'))
+                        <img src="{{ Auth::user()->avatar }}" >
+                    @else
+                        <img src="{{ asset(Auth::user()->avatar) }}" >
+                    @endif
+                @else
+                    <img src="{{ asset('images/avatardefault.png') }}">
+                @endif
             </div>
             <div class="menuuser hidemenu">
                 <ul>

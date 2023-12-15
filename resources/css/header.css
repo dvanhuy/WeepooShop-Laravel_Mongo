@@ -75,6 +75,7 @@ a.cart:hover{
     margin-left: 60px;
     overflow: hidden;
     cursor: pointer;
+    border-radius: 50%;
 }
 .nav_container div.avatar img{
     width: 100%;

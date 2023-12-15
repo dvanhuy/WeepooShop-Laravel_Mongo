@@ -32,3 +32,6 @@ mix.styles([
 mix.styles([
     'resources/css/User/edit_profile.css',
 ],"public/css/edit_profile.css");
+mix.styles([
+    'resources/css/Pay/get_form_pay.css',
+],"public/css/get_form_pay.css");

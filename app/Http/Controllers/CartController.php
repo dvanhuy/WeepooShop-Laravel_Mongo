@@ -89,8 +89,20 @@ class CartController extends Controller
 
     public function getFormPay(Request $request){
         $cartIDs = explode(',', $request->input('cartIDs'));
-        $carts = Cart::whereIn('id',  $cartIDs)->get();
-        return view('Cart.pay',['carts'=>$carts]);
+        $carts = Cart::whereIn('_id',  $cartIDs)->get();
+        $data= [];
+        $totalmoney = 0;
+        for ($i=0; $i < count($carts); $i++) {
+            $figure = Figure::find($carts[$i]->id_figure);
+            if($figure){
+                $carts[$i]['cart_id'] = $carts[$i]["_id"];
+                $data[$i]=($carts[$i]->toArray()+$figure->toArray());
+                $data[$i]['tong_tien'] = (int)$data[$i]['gia']*(int)$data[$i]['so_luong'];
+                $totalmoney += (int)$data[$i]['tong_tien'];
+            }
+        }
+
+        return view('Cart.pay',['carts'=>$data,'totalmoney'=>$totalmoney]);
     }
 
     public function pay(Request $request){
