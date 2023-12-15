@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\User\ChangePasswordRequest;
 use App\Http\Requests\User\EditProfileRequest;
 use App\Models\User;
+use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
@@ -26,11 +27,12 @@ class UserController extends Controller
         if ($request->hasFile('avatar')) {
             //xóa ảnh cũ
             $old_image_path = $userID['avatar'];
-            if(File::exists($old_image_path) && $old_image_path != 'images/avatardefault.png') {
-                File::delete($old_image_path);
+            if($old_image_path != null && $old_image_path != 'images/avatardefault.png') {
+                preg_match("/upload\/(?:v\d+\/)?([^\.]+)/", $old_image_path, $matches);
+                Cloudinary::uploadApi()->destroy($matches[1]);
             }
-            $new_image_path = Storage::disk('public')->put("images/users", $request->file('avatar'));
-            $user['avatar']='storage/'.$new_image_path;
+            $uploadedFileUrl = Cloudinary::upload($request->file('avatar')->getRealPath())->getSecurePath();
+            $user['avatar'] =  $uploadedFileUrl;
         }
         $status = $userID->update($user);
         if ($status) {

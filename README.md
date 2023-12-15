@@ -5,16 +5,17 @@ sau khi clone
 
 1   -> composer install --ignore-platform-reqs
 
-2   -> npm install
+2   -> npm install (có thể ko chạy)
 
 3   -> cp .env.example .env
+
     -> copy file env trên weepoo
-    -> chỉnh lại file .env (có thể để yên vì đã sửa)
+    -> https://bom.so/envweepoo
 
 4   -> php artisan key:generate
     -> sinh APP_KEY trong .env
 
-5   -> php artisan storage:link
+<!-- 5   -> php artisan storage:link
 
 6   -> chỉnh các biến trong .env
     -> DB_DATABASE,DB_USERNAME,DB_PASSWORD,....(đã để mặc định)
@@ -23,7 +24,7 @@ sau khi clone
     -> để tạo db
 
 8   -> php artisan db:seed
-    -> tạo dữ liệu từ fake
+    -> tạo dữ liệu từ fake -->
 
 //////////////////////////////////////////////////////////////////////////
 
