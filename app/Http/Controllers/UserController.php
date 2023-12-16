@@ -27,7 +27,7 @@ class UserController extends Controller
         if ($request->hasFile('avatar')) {
             //xóa ảnh cũ
             $old_image_path = $userID['avatar'];
-            if($old_image_path != null && $old_image_path != 'images/avatardefault.png') {
+            if($old_image_path != null && $old_image_path != 'images/avatardefault.png' && !str_contains($old_image_path,"http")) {
                 preg_match("/upload\/(?:v\d+\/)?([^\.]+)/", $old_image_path, $matches);
                 Cloudinary::uploadApi()->destroy($matches[1]);
             }

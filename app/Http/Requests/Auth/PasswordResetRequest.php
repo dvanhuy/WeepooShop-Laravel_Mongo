@@ -25,12 +25,14 @@ class PasswordResetRequest extends FormRequest
     {
         return [
             'tokenreset' => ['required'],
-            'email' => ['required','max:255','min:5','email','exists:mongodb.password_resets,email'],
+            'email' => ['required','max:255','min:5','email'],
             'newpassword' => ['required','min:5','max:255'],
             'confirmpassword' => ['required','min:5','max:255'],
         ];
     }
 
+    // ,'exists:mongodb.password_resets,email'
+    // 'email.exists' => 'Email không tồn tại hoặc chưa gửi yêu cầu đổi mật khẩu',
     public function messages()
     {
         return [
@@ -38,7 +40,6 @@ class PasswordResetRequest extends FormRequest
             'email.max' => 'Email quá dài',
             'email.email' => 'Email phải có chứa dấu @',
             'email.min' => 'Email phải dài hơn 5 kí tự',
-            'email.exists' => 'Email không tồn tại hoặc chưa gửi yêu cầu đổi mật khẩu',
             'newpassword.required' => 'Bạn chưa điền mật khẩu',
             'newpassword.min' => 'Mật khẩu phải dài hơn 5 kí tự',
             'newpassword.max' => 'Mật khẩu quá dài',

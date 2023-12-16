@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Auth;
 class BillController extends Controller
 {
     public function index(){
-        $bills = Bill::where("id_user", Auth::id())->get();
+        $bills = Bill::where("id_user", Auth::id())->orderBy('updated_at', 'desc')->get();
         return view('Bill.get_form_bill',["bills"=>$bills]);
     }
     public function getdetailform(Bill $billID){

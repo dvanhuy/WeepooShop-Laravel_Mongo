@@ -33,7 +33,7 @@ class GoogleController extends Controller
                 'name' => $googleUser->name,
                 'social_id'=> $googleUser->id,
                 'social_type' => 'google',
-                'email_verified_at'=> now(),
+                'email_verified_at'=> date("Y-m-d H:i:s"),
                 'password' => bcrypt(Str::random(10)),
                 'avatar' => $googleUser->avatar,
             ];

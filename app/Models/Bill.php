@@ -21,6 +21,7 @@ class Bill extends Eloquent
         "hinh_anh",
         "tong_tien",
         "phuong_thuc_thanh_toan",
-        "cardIDs"
+        "cardIDs",
+        "da_thanh_toan"
     ] ;
 }

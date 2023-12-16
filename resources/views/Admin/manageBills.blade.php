@@ -40,7 +40,7 @@
                     <div class="title-table">
                         <div>Mã hóa đơn</div>
                         <div>Tổng tiền</div>
-                        <div>Mã người mua</div>
+                        <div>Đã thanh toán</div>
                         <div>Trạng thái</div>
                         <div>Thao tác</div>
                     </div>
@@ -48,12 +48,12 @@
                     <div class="item-table">
                         <div>{{ $bill['_id'] }}</div>
                         <div>{{ number_format($bill['tong_tien'], 0, ',', '.')}}</div>
-                        <div>{{ $bill['id_user'] }}</div>
+                        <div>{{ $bill['da_thanh_toan'] }}</div>
                         <div>{{ $bill['trang_thai'] }}</div>
                         <div class="thaotac">
                             <a href="{{ route('bill.detail',$bill['_id']) }}"><i class="fa-solid fa-eye"></i></a>
                             <a href="{{ route('manage.get_form_update_user',$bill['_id']) }}"><i class="fa-solid fa-pen"></i></a>
-                            <a href="{{ route('manage.delete_user',$bill['_id']) }}" onclick="return confirm('Bạn có chắn muốn xóa không?');"><i class="fa-solid fa-trash"></i></a>
+                            <!-- <a href="{{ route('manage.delete_user',$bill['_id']) }}" onclick="return confirm('Bạn có chắn muốn xóa không?');"><i class="fa-solid fa-trash"></i></a> -->
                         </div>
                     </div>
                     @endforeach

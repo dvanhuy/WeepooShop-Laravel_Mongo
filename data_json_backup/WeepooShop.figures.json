@@ -1,8 +1,7 @@
 [{
   "_id": {
-    "$oid": "657adec547f639decdcc0b08"
+    "$oid": "657d706ee85142aee0a8f32c"
   },
-  "id": 1,
   "ten": "Mô hình Naruto Shippuden",
   "gia": 900000,
   "so_luong_hien_con": 32,
@@ -20,10 +19,9 @@
 },
 {
   "_id": {
-    "$oid": "657adec547f639decdcc0b09"
+    "$oid": "657d706ee85142aee0a8f32d"
   },
-  "id": 2,
-  "ten": "Mô hình Sasuke Shippuden",
+  "ten": "Mô hình Sasuke",
   "gia": 850000,
   "so_luong_hien_con": 48,
   "so_luong_da_ban": 3,
@@ -40,10 +38,9 @@
 },
 {
   "_id": {
-    "$oid": "657adec547f639decdcc0b0a"
+    "$oid": "657d706ee85142aee0a8f32e"
   },
-  "id": 3,
-  "ten": "Mô hình Sakura Haruno",
+  "ten": "Mô hình Jujutsu Kaisen",
   "gia": 850000,
   "so_luong_hien_con": 48,
   "so_luong_da_ban": 9,
@@ -52,7 +49,7 @@
   "chieu_rong": 82,
   "chieu_dai": 175,
   "chat_lieu": "Nhựa Poly",
-  "mo_ta": "Mô hình anime của Sakura Haruno.",
+  "mo_ta": "Mô hình anime của Jujutsu Kaisen",
   "hinh_anh": "https://product.hstatic.net/200000695275/product/jujutsu-kaisen-figure-sukuna-banpresto-hbp-18299__2__1af4078474564dabb75481ef99c20dfc_master.jpg",
   "created_at": "11/29/2023 19:13",
   "updated_at": "11/29/2023 19:13",
@@ -60,10 +57,9 @@
 },
 {
   "_id": {
-    "$oid": "657adec547f639decdcc0b0b"
+    "$oid": "657d706ee85142aee0a8f32f"
   },
-  "id": 4,
-  "ten": "Mô hình Naruto Shippuden",
+  "ten": "Mô hình Maximatic Tanjiro Kamado",
   "gia": 900000,
   "so_luong_hien_con": 32,
   "so_luong_da_ban": 28,
@@ -72,7 +68,7 @@
   "chieu_rong": 82,
   "chieu_dai": 170,
   "chat_lieu": "Gốm",
-  "mo_ta": "Mô hình anime của Naruto Shippuden.",
+  "mo_ta": "Mô hình anime của Maximatic Tanjiro Kamado.",
   "hinh_anh": "https://product.hstatic.net/200000695275/product/maximatic-tanjiro-kamado-hbp-18454__2__9aeeb3ce46b94fa984c7333cbac08733_master.jpg",
   "created_at": "11/30/2023 19:13",
   "updated_at": "11/30/2023 19:13",
@@ -80,10 +76,9 @@
 },
 {
   "_id": {
-    "$oid": "657adec547f639decdcc0b0c"
+    "$oid": "657d706ee85142aee0a8f330"
   },
-  "id": 5,
-  "ten": "Mô hình Dragon Ball GT",
+  "ten": "Mô hình Búp bê Banpresto",
   "gia": 850000,
   "so_luong_hien_con": 38,
   "so_luong_da_ban": 18,
@@ -92,7 +87,7 @@
   "chieu_rong": 88,
   "chieu_dai": 205,
   "chat_lieu": "Gốm",
-  "mo_ta": "Mô hình anime của Dragon Ball GT.",
+  "mo_ta": "Mô hình anime của Búp bê Banpresto",
   "hinh_anh": "https://product.hstatic.net/200000695275/product/chainsaw-man-q-posket-denji-do-choi-bup-be-banpresto-4983164880922_2d24b364ddb54da9b7119c03068e959d_master.jpg",
   "created_at": "12/1/2023 19:13",
   "updated_at": "12/1/2023 19:13",
@@ -100,10 +95,9 @@
 },
 {
   "_id": {
-    "$oid": "657adec547f639decdcc0b0d"
+    "$oid": "657d706ee85142aee0a8f331"
   },
-  "id": 6,
-  "ten": "Mô hình One Piece Straw Hat",
+  "ten": "Mô hình Denji Banpresto",
   "gia": 755000,
   "so_luong_hien_con": 35,
   "so_luong_da_ban": 5,
@@ -112,7 +106,7 @@
   "chieu_rong": 85,
   "chieu_dai": 175,
   "chat_lieu": "Nhựa PVC",
-  "mo_ta": "Mô hình anime của One Piece Straw Hat.",
+  "mo_ta": "Mô hình anime của Denji Banpresto",
   "hinh_anh": "https://product.hstatic.net/200000695275/product/chainsaw-man-q-posket-denji-banpresto-4983164880922__1__8648d0babe024b47a591b2a625fcf67a_master.jpg",
   "created_at": "12/2/2023 19:13",
   "updated_at": "12/2/2023 19:13",
@@ -120,10 +114,9 @@
 },
 {
   "_id": {
-    "$oid": "657adec547f639decdcc0b0e"
+    "$oid": "657d706ee85142aee0a8f332"
   },
-  "id": 7,
-  "ten": "Mô hình Naruto Shippuden Sasuke",
+  "ten": "Mô hình Kaisen King",
   "gia": 950000,
   "so_luong_hien_con": 32,
   "so_luong_da_ban": 10,
@@ -132,7 +125,7 @@
   "chieu_rong": 82,
   "chieu_dai": 185,
   "chat_lieu": "Nhựa Poly",
-  "mo_ta": "Mô hình anime của Naruto Shippuden Sasuke.",
+  "mo_ta": "Mô hình anime của Kaisen King.",
   "hinh_anh": "https://product.hstatic.net/200000695275/product/u-kaisen-king-of-artist-the-yuji-i-do-choi-mo-hinh-banpresto-hbp-18448_fa78b80d82cc41ff8489e8b43072ecf6_master.jpg",
   "created_at": "12/3/2023 19:13",
   "updated_at": "12/3/2023 19:13",
@@ -140,10 +133,9 @@
 },
 {
   "_id": {
-    "$oid": "657adec547f639decdcc0b0f"
+    "$oid": "657d706ee85142aee0a8f333"
   },
-  "id": 8,
-  "ten": "Mô hình Dragon Ball GT Super Saiyan Vegeta",
+  "ten": "Mô hình tuyển chọn Naruto",
   "gia": 885000,
   "so_luong_hien_con": 36,
   "so_luong_da_ban": 26,
@@ -152,7 +144,7 @@
   "chieu_rong": 88,
   "chieu_dai": 215,
   "chat_lieu": "Kim Loại",
-  "mo_ta": "Mô hình anime của Dragon Ball GT Super Saiyan Vegeta.",
+  "mo_ta": "Mô hình anime của tuyển chọn Naruto Đại Chiến Ninja",
   "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-ninkai-taisen-6941848247599__1__0085604d5b2648cb9e95f2010c722a89_master.jpg",
   "created_at": "12/4/2023 19:13",
   "updated_at": "12/4/2023 19:13",
@@ -160,70 +152,72 @@
 },
 {
   "_id": {
-    "$oid": "657adec547f639decdcc0b10"
+    "$oid": "657d706ee85142aee0a8f334"
   },
-  "id": 9,
-  "ten": "Mô hình One Piece Straw Hat Monkey D Luffy",
+  "ten": "Mô hình Lulu Pigy",
   "gia": 785000,
-  "so_luong_hien_con": 34,
-  "so_luong_da_ban": 4,
+  "so_luong_hien_con": 31,
+  "so_luong_da_ban": 7,
   "nha_sx": "Bandai",
   "chieu_cao": 145,
   "chieu_rong": 85,
   "chieu_dai": 185,
   "chat_lieu": "Kim Loại",
-  "mo_ta": "Mô hình anime của One Piece Straw Hat Monkey D Luffy.",
-  "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-ninkai-taisen-6941848247599__1__0085604d5b2648cb9e95f2010c722a89_master.jpg",
+  "mo_ta": "Mô hình anime của Lulu Pigy",
+  "hinh_anh": "https://bizweb.dktcdn.net/thumb/1024x1024/100/357/932/products/c7a4571a-6b57-4d37-8304-37902589762e.jpg",
   "created_at": "12/5/2023 19:13",
-  "updated_at": "12/5/2023 19:13",
+  "updated_at": {
+    "$date": "2023-12-16T09:48:06.806Z"
+  },
   "deleted_at": null
 },
 {
   "_id": {
-    "$oid": "657adec547f639decdcc0b11"
+    "$oid": "657d706ee85142aee0a8f335"
   },
-  "id": 10,
-  "ten": "Mô hình Naruto Shippuden Gaara",
+  "ten": "Mô hình Naruto",
   "gia": 925000,
-  "so_luong_hien_con": 30,
-  "so_luong_da_ban": 20,
+  "so_luong_hien_con": 25,
+  "so_luong_da_ban": 25,
   "nha_sx": "Bandai",
   "chieu_cao": 145,
   "chieu_rong": 82,
   "chieu_dai": 185,
   "chat_lieu": "Nhựa PVC",
-  "mo_ta": "Mô hình anime của Naruto Shippuden Gaara.",
+  "mo_ta": "Mô hình anime của Naruto",
   "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-ninkai-taisen-6941848247599__2__8741a88ad7774c8d9e965c268d61899e_master.jpg",
   "created_at": "12/6/2023 19:13",
-  "updated_at": "12/6/2023 19:13",
+  "updated_at": {
+    "$date": "2023-12-16T09:52:46.318Z"
+  },
   "deleted_at": null
 },
 {
   "_id": {
-    "$oid": "657adec547f639decdcc0b12"
+    "$oid": "657d706ee85142aee0a8f336"
   },
-  "id": 11,
-  "ten": "Mô hình Dragon Ball GT Super Saiyan Gohan",
+  "ten": "Mô hình Pigy Christmast",
   "gia": 875000,
-  "so_luong_hien_con": 37,
-  "so_luong_da_ban": 8,
+  "so_luong_hien_con": 34,
+  "so_luong_da_ban": 11,
   "nha_sx": "Bandai",
   "chieu_cao": 165,
   "chieu_rong": 88,
   "chieu_dai": 215,
   "chat_lieu": "Gốm",
-  "mo_ta": "Mô hình anime của Dragon Ball GT Super Saiyan Gohan.",
-  "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-ninkai-taisen-6941848247599__1__0085604d5b2648cb9e95f2010c722a89_master.jpg",
+  "mo_ta": "Mô hình anime của Pigy Christmast",
+  "hinh_anh": "https://bizweb.dktcdn.net/thumb/1024x1024/100/357/932/products/0a905680-3f28-465f-86b0-69b44dc6f0a8.jpg",
   "created_at": "12/7/2023 19:13",
-  "updated_at": "12/7/2023 19:13",
+  "updated_at": {
+    "$date": "2023-12-16T10:45:33.056Z"
+  },
   "deleted_at": null
 },
 {
   "_id": {
-    "$oid": "657adec547f639decdcc0b13"
+    "$oid": "657d706ee85142aee0a8f337"
   },
-  "id": 12,
-  "ten": "Mô hình One Piece Straw Hat Chopper",
+  "ten": "Mô hình Naruto Đại Chiến",
   "gia": 785000,
   "so_luong_hien_con": 34,
   "so_luong_da_ban": 19,
@@ -232,7 +226,7 @@
   "chieu_rong": 85,
   "chieu_dai": 185,
   "chat_lieu": "Nhựa ABS",
-  "mo_ta": "Mô hình anime của One Piece Straw Hat Chopper.",
+  "mo_ta": "Mô hình anime của các nhân vật yêu thích của Naruto Đại Chiến Ninja",
   "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-ninkai-taisen-6941848247599__1__0085604d5b2648cb9e95f2010c722a89_master.jpg",
   "created_at": "12/8/2023 19:13",
   "updated_at": "12/8/2023 19:13",
@@ -240,10 +234,30 @@
 },
 {
   "_id": {
-    "$oid": "657adec547f639decdcc0b15"
+    "$oid": "657d706ee85142aee0a8f338"
   },
-  "id": 14,
-  "ten": "Mô hình Naruto Shippuden",
+  "ten": "Mô hình Cây Thông",
+  "gia": 300000,
+  "so_luong_hien_con": 23,
+  "so_luong_da_ban": 32,
+  "nha_sx": "Dell",
+  "chieu_cao": 500,
+  "chieu_rong": 80,
+  "chieu_dai": 140,
+  "chat_lieu": "Gốm",
+  "mo_ta": "Mô hình Cây Thông",
+  "hinh_anh": "https://bizweb.dktcdn.net/thumb/1024x1024/100/357/932/products/370225906-368469775557414-9098435064425770327-n.jpg",
+  "created_at": "12/9/2023 19:13",
+  "updated_at": {
+    "$date": "2023-12-16T09:49:02.259Z"
+  },
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f339"
+  },
+  "ten": "Mô hình Madara (Naruto)",
   "gia": 255000,
   "so_luong_hien_con": 32,
   "so_luong_da_ban": 21,
@@ -252,7 +266,7 @@
   "chieu_rong": 54,
   "chieu_dai": 150,
   "chat_lieu": "Nhựa Poly",
-  "mo_ta": "SWO 85mm x 85mm x 85mm của Dell.",
+  "mo_ta": "Mô hình anime của nhân vật Madara",
   "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-ninkai-taisen-6941848247599__3__7c0ce2a58a164e6fa3e6979fa65b4883_master.jpg",
   "created_at": "12/10/2023 19:13",
   "updated_at": "12/10/2023 19:13",
@@ -260,10 +274,9 @@
 },
 {
   "_id": {
-    "$oid": "657adec547f639decdcc0b16"
+    "$oid": "657d706ee85142aee0a8f33a"
   },
-  "id": 15,
-  "ten": "Mô hình Naruto Shippuden",
+  "ten": "Mô hình Obito (Naruto)",
   "gia": 375000,
   "so_luong_hien_con": 36,
   "so_luong_da_ban": 9,
@@ -272,7 +285,7 @@
   "chieu_rong": 39,
   "chieu_dai": 122,
   "chat_lieu": "Nhựa ABS",
-  "mo_ta": "SWO 6U của Dell.",
+  "mo_ta": "Mô hình anime của nhân vật Obito",
   "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-ninkai-taisen-6941848247599__4__fce9512354bf49a09407fef879cdff92_master.jpg",
   "created_at": "12/11/2023 19:13",
   "updated_at": "12/11/2023 19:13",
@@ -280,10 +293,9 @@
 },
 {
   "_id": {
-    "$oid": "657adec547f639decdcc0b17"
+    "$oid": "657d706ee85142aee0a8f33b"
   },
-  "id": 16,
-  "ten": "Mô hình Dragon Ball GT Super Saiyan Vegeta",
+  "ten": "Mô hình Kakashi (Naruto)",
   "gia": 950000,
   "so_luong_hien_con": 31,
   "so_luong_da_ban": 10,
@@ -292,7 +304,7 @@
   "chieu_rong": 88,
   "chieu_dai": 215,
   "chat_lieu": "Gỗ",
-  "mo_ta": "Mô hình anime của Naruto Shipuden",
+  "mo_ta": "Mô hình anime của nhân vật Kakashi",
   "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-ninkai-taisen-6941848247599__6__c41604d1a3cc461ab9eb890ebea7401e_master.jpg",
   "created_at": "12/12/2023 19:13",
   "updated_at": "12/12/2023 19:13",
@@ -300,10 +312,9 @@
 },
 {
   "_id": {
-    "$oid": "657adec547f639decdcc0b18"
+    "$oid": "657d706ee85142aee0a8f33c"
   },
-  "id": 17,
-  "ten": "Mô hình Dragon Ball Z Broly",
+  "ten": "Mô hình Otsutsuki Kaguya (Naruto)",
   "gia": 875000,
   "so_luong_hien_con": 38,
   "so_luong_da_ban": 21,
@@ -312,7 +323,7 @@
   "chieu_rong": 95,
   "chieu_dai": 345,
   "chat_lieu": "Gỗ",
-  "mo_ta": "Mô hình anime của Naruto Shipuden",
+  "mo_ta": "Mô hình anime của nhân vật Kaguya",
   "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-ninkai-taisen-6941848247599__7__947305e877c44841a17a115434831853_master.jpg",
   "created_at": "12/13/2023 19:13",
   "updated_at": "12/13/2023 19:13",
@@ -320,10 +331,9 @@
 },
 {
   "_id": {
-    "$oid": "657adec547f639decdcc0b19"
+    "$oid": "657d706ee85142aee0a8f33d"
   },
-  "id": 18,
-  "ten": "Mô hình Naruto Shippuden",
+  "ten": "Mô hình Itachi (Naruto)",
   "gia": 250000,
   "so_luong_hien_con": 28,
   "so_luong_da_ban": 26,
@@ -332,7 +342,7 @@
   "chieu_rong": 50,
   "chieu_dai": 48,
   "chat_lieu": "Gỗ",
-  "mo_ta": "Mô hình anime của Naruto Shipuden",
+  "mo_ta": "Mô hình anime của nhân vật Itachi",
   "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-ninkai-taisen-6941848247599__8__5c93815ab95f481b8eba678b509cf1b4_master.jpg",
   "created_at": "12/14/2023 19:13",
   "updated_at": "12/14/2023 19:13",
@@ -340,10 +350,9 @@
 },
 {
   "_id": {
-    "$oid": "657adec547f639decdcc0b1a"
+    "$oid": "657d706ee85142aee0a8f33e"
   },
-  "id": 19,
-  "ten": "Mô hình Naruto Shippuden",
+  "ten": "Mô hình Kakashi (Naruto)",
   "gia": 350000,
   "so_luong_hien_con": 35,
   "so_luong_da_ban": 16,
@@ -352,7 +361,7 @@
   "chieu_rong": 35,
   "chieu_dai": 58,
   "chat_lieu": "Nhựa Poly",
-  "mo_ta": "Mô hình anime của Naruto Shipuden",
+  "mo_ta": "Mô hình anime của nhân vật Kakashi",
   "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-ninkai-taisen-6941848247599__9__d0a4b388e0b743b48f9225b96b27a226_master.jpg",
   "created_at": "12/15/2023 19:13",
   "updated_at": "12/15/2023 19:13",
@@ -360,10 +369,9 @@
 },
 {
   "_id": {
-    "$oid": "657adec547f639decdcc0b1b"
+    "$oid": "657d706ee85142aee0a8f33f"
   },
-  "id": 20,
-  "ten": "Mô hình Naruto Shippuden",
+  "ten": "Mô hình Sakura (Naruto)",
   "gia": 355000,
   "so_luong_hien_con": 37,
   "so_luong_da_ban": 17,
@@ -372,7 +380,7 @@
   "chieu_rong": 48,
   "chieu_dai": 74,
   "chat_lieu": "Gốm",
-  "mo_ta": "Mô hình anime của Naruto Shipuden",
+  "mo_ta": "Mô hình anime của nhân vật Sakura",
   "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-ninkai-taisen-6941848247599__10__ae38ceecb1f84f62bbcf0332fa8d43e0_master.jpg",
   "created_at": "12/16/2023 19:13",
   "updated_at": "12/16/2023 19:13",
@@ -380,10 +388,9 @@
 },
 {
   "_id": {
-    "$oid": "657adec547f639decdcc0b1c"
+    "$oid": "657d706ee85142aee0a8f340"
   },
-  "id": 21,
-  "ten": "Mô hình Naruto Shippuden",
+  "ten": "Mô hình Sasuke (Naruto)",
   "gia": 360000,
   "so_luong_hien_con": 39,
   "so_luong_da_ban": 19,
@@ -392,7 +399,7 @@
   "chieu_rong": 68,
   "chieu_dai": 90,
   "chat_lieu": "Nhựa PVC",
-  "mo_ta": "Mô hình anime của Naruto Shipuden",
+  "mo_ta": "Mô hình anime của nhân vật Sasuke",
   "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-ninkai-taisen-6941848247599__11__d93349ee784146ef924e8a39316030c9_master.jpg",
   "created_at": "12/17/2023 19:13",
   "updated_at": "12/17/2023 19:13",
@@ -400,10 +407,9 @@
 },
 {
   "_id": {
-    "$oid": "657adec547f639decdcc0b1d"
+    "$oid": "657d706ee85142aee0a8f341"
   },
-  "id": 22,
-  "ten": "Mô hình Naruto Shippuden",
+  "ten": "Mô hình Sakura (Naruto)",
   "gia": 365000,
   "so_luong_hien_con": 41,
   "so_luong_da_ban": 18,
@@ -412,7 +418,7 @@
   "chieu_rong": 45,
   "chieu_dai": 85,
   "chat_lieu": "Gỗ",
-  "mo_ta": "Mô hình anime của Naruto Shipuden",
+  "mo_ta": "Mô hình anime của nhân vật Sakura",
   "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-ninkai-taisen-6941848247599__12__13910495734d4931b7a561f8aa99112f_master.jpg",
   "created_at": "12/18/2023 19:13",
   "updated_at": "12/18/2023 19:13",
@@ -420,10 +426,9 @@
 },
 {
   "_id": {
-    "$oid": "657adec547f639decdcc0b1e"
+    "$oid": "657d706ee85142aee0a8f342"
   },
-  "id": 23,
-  "ten": "Mô hình Naruto Shippuden",
+  "ten": "Mô hình Obito (Naruto)",
   "gia": 370000,
   "so_luong_hien_con": 43,
   "so_luong_da_ban": 6,
@@ -432,7 +437,7 @@
   "chieu_rong": 35,
   "chieu_dai": 48,
   "chat_lieu": "Gỗ",
-  "mo_ta": "Mô hình anime của Naruto Shipuden",
+  "mo_ta": "Mô hình anime của nhân vật Obito",
   "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-ninkai-taisen-6941848247599__13__a81656fe0d514bc2850e9103c91931e5_master.jpg",
   "created_at": "12/19/2023 19:13",
   "updated_at": "12/19/2023 19:13",
@@ -440,10 +445,9 @@
 },
 {
   "_id": {
-    "$oid": "657adec547f639decdcc0b1f"
+    "$oid": "657d706ee85142aee0a8f343"
   },
-  "id": 24,
-  "ten": "Mô hình Disney",
+  "ten": "Mô hình Big Max (Disney)",
   "gia": 375000,
   "so_luong_hien_con": 45,
   "so_luong_da_ban": 18,
@@ -452,7 +456,7 @@
   "chieu_rong": 98,
   "chieu_dai": 56,
   "chat_lieu": "Nhựa Poly",
-  "mo_ta": "Mô hình anime của Disney",
+  "mo_ta": "Mô hình anime của nhân vật Big Max",
   "hinh_anh": "https://product.hstatic.net/200000695275/product/disney-100th-anniversary-bell-6941848248602__2__4bba0e7cf86b4d5db9699170c58b6172_master.jpg",
   "created_at": "12/20/2023 19:13",
   "updated_at": "12/20/2023 19:13",
@@ -460,9 +464,8 @@
 },
 {
   "_id": {
-    "$oid": "657adec547f639decdcc0b20"
+    "$oid": "657d706ee85142aee0a8f344"
   },
-  "id": 25,
   "ten": "Mô hình Disney",
   "gia": 380000,
   "so_luong_hien_con": 47,
@@ -480,10 +483,9 @@
 },
 {
   "_id": {
-    "$oid": "657adec547f639decdcc0b21"
+    "$oid": "657d706ee85142aee0a8f345"
   },
-  "id": 26,
-  "ten": "Mô hình Disney",
+  "ten": "Mô hình Gấu (Disney)",
   "gia": 385000,
   "so_luong_hien_con": 49,
   "so_luong_da_ban": 14,
@@ -492,7 +494,7 @@
   "chieu_rong": 87,
   "chieu_dai": 51,
   "chat_lieu": "Gỗ",
-  "mo_ta": "Mô hình anime của Disney",
+  "mo_ta": "Mô hình anime của Gấu Disney",
   "hinh_anh": "https://product.hstatic.net/200000695275/product/disney-100th-anniversary-bell-6941848248602__3__0a23c8cd49fd4b1aa0bb5c270843b9d0_master.jpg",
   "created_at": "12/22/2023 19:13",
   "updated_at": "12/22/2023 19:13",
@@ -500,10 +502,9 @@
 },
 {
   "_id": {
-    "$oid": "657adec547f639decdcc0b22"
+    "$oid": "657d706ee85142aee0a8f346"
   },
-  "id": 27,
-  "ten": "Mô hình Disney",
+  "ten": "Mô hình Vịt (Disney)",
   "gia": 390000,
   "so_luong_hien_con": 51,
   "so_luong_da_ban": 30,
@@ -512,7 +513,7 @@
   "chieu_rong": 48,
   "chieu_dai": 45,
   "chat_lieu": "Gỗ",
-  "mo_ta": "Mô hình anime của Disney",
+  "mo_ta": "Mô hình anime của Vịt Disney",
   "hinh_anh": "https://product.hstatic.net/200000695275/product/disney-100th-anniversary-bell-6941848248602__4__c51f552bf9cb45b0855acfd2f096865d_master.jpg",
   "created_at": "12/23/2023 19:13",
   "updated_at": "12/23/2023 19:13",
@@ -520,10 +521,9 @@
 },
 {
   "_id": {
-    "$oid": "657adec547f639decdcc0b23"
+    "$oid": "657d706ee85142aee0a8f347"
   },
-  "id": 28,
-  "ten": "Mô hình Disney",
+  "ten": "Mô hình Thỏ (Disney)",
   "gia": 395000,
   "so_luong_hien_con": 53,
   "so_luong_da_ban": 11,
@@ -532,7 +532,7 @@
   "chieu_rong": 35,
   "chieu_dai": 84,
   "chat_lieu": "Nhựa ABS",
-  "mo_ta": "Mô hình anime của Disney",
+  "mo_ta": "Mô hình anime của Thỏ Disney",
   "hinh_anh": "https://product.hstatic.net/200000695275/product/disney-100th-anniversary-bell-6941848248602__6__ed228c1af63542ebb3c58506be105f11_master.jpg",
   "created_at": "12/24/2023 19:13",
   "updated_at": "12/24/2023 19:13",
@@ -540,44 +540,577 @@
 },
 {
   "_id": {
-    "$oid": "657adec547f639decdcc0b24"
+    "$oid": "657d706ee85142aee0a8f348"
   },
-  "id": 29,
-  "ten": "Mô hình Disney",
+  "ten": "Mô hình Mickey (Disney)",
   "gia": 400000,
-  "so_luong_hien_con": 55,
-  "so_luong_da_ban": 10,
+  "so_luong_hien_con": 53,
+  "so_luong_da_ban": 12,
   "nha_sx": "POP",
   "chieu_cao": 155,
   "chieu_rong": 89,
   "chieu_dai": 89,
   "chat_lieu": "Nhựa ABS",
-  "mo_ta": "Mô hình anime của Disney",
+  "mo_ta": "Mô hình anime của Mickey Disney",
   "hinh_anh": "https://product.hstatic.net/200000695275/product/disney-100th-anniversary-bell-6941848248602__5__82f4ff37029347bd83c7a5bbfb508a2b_master.jpg",
   "created_at": "12/25/2023 19:13",
-  "updated_at": "12/25/2023 19:13",
+  "updated_at": {
+    "$date": "2023-12-16T10:48:22.868Z"
+  },
   "deleted_at": null
 },
 {
   "_id": {
-    "$oid": "657afb56a4e91930460f7229"
+    "$oid": "657d706ee85142aee0a8f349"
   },
-  "ten": "132132",
-  "gia": "132123123123123123123",
-  "so_luong_hien_con": "123",
-  "so_luong_da_ban": "0",
-  "nha_sx": null,
-  "chieu_cao": null,
-  "chieu_rong": null,
-  "chieu_dai": null,
-  "chat_lieu": "Chưa xác định",
-  "mo_ta": null,
-  "hinh_anh": "images/emptyFigure.webp",
-  "deleted_at": {},
+  "ten": "Mô hình Naruto Shippuden",
+  "gia": 900000,
+  "so_luong_hien_con": 32,
+  "so_luong_da_ban": 6,
+  "nha_sx": "Bandai",
+  "chieu_cao": 135,
+  "chieu_rong": 82,
+  "chieu_dai": 170,
+  "chat_lieu": "Nhựa ABS",
+  "mo_ta": "Mô hình anime của Naruto Shippuden.",
+  "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-shippuden-grandista-nero-uzumaki-hbp-18406__1__30fc1b4a59344a1184f219e456e133e7_master.jpg",
+  "created_at": "11/27/2023 19:13",
+  "updated_at": "11/27/2023 19:13",
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f34a"
+  },
+  "ten": "Mô hình Sasuke",
+  "gia": 850000,
+  "so_luong_hien_con": 48,
+  "so_luong_da_ban": 3,
+  "nha_sx": "Bandai",
+  "chieu_cao": 135,
+  "chieu_rong": 82,
+  "chieu_dai": 175,
+  "chat_lieu": "Kim Loại",
+  "mo_ta": "Mô hình anime của Sasuke Shippuden.",
+  "hinh_anh": "https://i.bbcosplay.com/14317/z2559918996181_11f91df4f193019efd9a6bb357eac88d1.jpg.webp",
+  "created_at": "11/28/2023 19:13",
+  "updated_at": "11/28/2023 19:13",
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f34b"
+  },
+  "ten": "Mô hình Jujutsu Kaisen",
+  "gia": 850000,
+  "so_luong_hien_con": 48,
+  "so_luong_da_ban": 9,
+  "nha_sx": "Bandai",
+  "chieu_cao": 135,
+  "chieu_rong": 82,
+  "chieu_dai": 175,
+  "chat_lieu": "Nhựa Poly",
+  "mo_ta": "Mô hình anime của Jujutsu Kaisen",
+  "hinh_anh": "https://product.hstatic.net/200000695275/product/jujutsu-kaisen-figure-sukuna-banpresto-hbp-18299__2__1af4078474564dabb75481ef99c20dfc_master.jpg",
+  "created_at": "11/29/2023 19:13",
+  "updated_at": "11/29/2023 19:13",
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f34c"
+  },
+  "ten": "Mô hình Maximatic Tanjiro Kamado",
+  "gia": 900000,
+  "so_luong_hien_con": 32,
+  "so_luong_da_ban": 28,
+  "nha_sx": "Bandai",
+  "chieu_cao": 135,
+  "chieu_rong": 82,
+  "chieu_dai": 170,
+  "chat_lieu": "Gốm",
+  "mo_ta": "Mô hình anime của Maximatic Tanjiro Kamado.",
+  "hinh_anh": "https://product.hstatic.net/200000695275/product/maximatic-tanjiro-kamado-hbp-18454__2__9aeeb3ce46b94fa984c7333cbac08733_master.jpg",
+  "created_at": "11/30/2023 19:13",
+  "updated_at": "11/30/2023 19:13",
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f34d"
+  },
+  "ten": "Mô hình Búp bê Banpresto",
+  "gia": 850000,
+  "so_luong_hien_con": 38,
+  "so_luong_da_ban": 18,
+  "nha_sx": "Bandai",
+  "chieu_cao": 165,
+  "chieu_rong": 88,
+  "chieu_dai": 205,
+  "chat_lieu": "Gốm",
+  "mo_ta": "Mô hình anime của Búp bê Banpresto",
+  "hinh_anh": "https://product.hstatic.net/200000695275/product/chainsaw-man-q-posket-denji-do-choi-bup-be-banpresto-4983164880922_2d24b364ddb54da9b7119c03068e959d_master.jpg",
+  "created_at": "12/1/2023 19:13",
+  "updated_at": "12/1/2023 19:13",
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f34e"
+  },
+  "ten": "Mô hình Denji Banpresto",
+  "gia": 755000,
+  "so_luong_hien_con": 35,
+  "so_luong_da_ban": 5,
+  "nha_sx": "Bandai",
+  "chieu_cao": 145,
+  "chieu_rong": 85,
+  "chieu_dai": 175,
+  "chat_lieu": "Nhựa PVC",
+  "mo_ta": "Mô hình anime của Denji Banpresto",
+  "hinh_anh": "https://product.hstatic.net/200000695275/product/chainsaw-man-q-posket-denji-banpresto-4983164880922__1__8648d0babe024b47a591b2a625fcf67a_master.jpg",
+  "created_at": "12/2/2023 19:13",
+  "updated_at": "12/2/2023 19:13",
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f34f"
+  },
+  "ten": "Mô hình Kaisen King",
+  "gia": 950000,
+  "so_luong_hien_con": 32,
+  "so_luong_da_ban": 10,
+  "nha_sx": "Bandai",
+  "chieu_cao": 145,
+  "chieu_rong": 82,
+  "chieu_dai": 185,
+  "chat_lieu": "Nhựa Poly",
+  "mo_ta": "Mô hình anime của Kaisen King.",
+  "hinh_anh": "https://product.hstatic.net/200000695275/product/u-kaisen-king-of-artist-the-yuji-i-do-choi-mo-hinh-banpresto-hbp-18448_fa78b80d82cc41ff8489e8b43072ecf6_master.jpg",
+  "created_at": "12/3/2023 19:13",
+  "updated_at": "12/3/2023 19:13",
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f350"
+  },
+  "ten": "Mô hình tuyển chọn Naruto",
+  "gia": 885000,
+  "so_luong_hien_con": 36,
+  "so_luong_da_ban": 26,
+  "nha_sx": "Bandai",
+  "chieu_cao": 165,
+  "chieu_rong": 88,
+  "chieu_dai": 215,
+  "chat_lieu": "Kim Loại",
+  "mo_ta": "Mô hình anime của tuyển chọn Naruto Đại Chiến Ninja",
+  "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-ninkai-taisen-6941848247599__1__0085604d5b2648cb9e95f2010c722a89_master.jpg",
+  "created_at": "12/4/2023 19:13",
+  "updated_at": "12/4/2023 19:13",
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f351"
+  },
+  "ten": "Mô hình Lulu Pigy",
+  "gia": 785000,
+  "so_luong_hien_con": 34,
+  "so_luong_da_ban": 4,
+  "nha_sx": "Bandai",
+  "chieu_cao": 145,
+  "chieu_rong": 85,
+  "chieu_dai": 185,
+  "chat_lieu": "Kim Loại",
+  "mo_ta": "Mô hình anime của Lulu Pigy",
+  "hinh_anh": "https://bizweb.dktcdn.net/thumb/1024x1024/100/357/932/products/c7a4571a-6b57-4d37-8304-37902589762e.jpGỗv=1702458610277",
+  "created_at": "12/5/2023 19:13",
+  "updated_at": "12/5/2023 19:13",
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f352"
+  },
+  "ten": "Mô hình Naruto",
+  "gia": 925000,
+  "so_luong_hien_con": 30,
+  "so_luong_da_ban": 20,
+  "nha_sx": "Bandai",
+  "chieu_cao": 145,
+  "chieu_rong": 82,
+  "chieu_dai": 185,
+  "chat_lieu": "Nhựa PVC",
+  "mo_ta": "Mô hình anime của Naruto",
+  "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-ninkai-taisen-6941848247599__2__8741a88ad7774c8d9e965c268d61899e_master.jpg",
+  "created_at": "12/6/2023 19:13",
+  "updated_at": "12/6/2023 19:13",
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f353"
+  },
+  "ten": "Mô hình Pigy Christmast",
+  "gia": 875000,
+  "so_luong_hien_con": 37,
+  "so_luong_da_ban": 8,
+  "nha_sx": "Bandai",
+  "chieu_cao": 165,
+  "chieu_rong": 88,
+  "chieu_dai": 215,
+  "chat_lieu": "Gốm",
+  "mo_ta": "Mô hình anime của Pigy Christmast",
+  "hinh_anh": "https://bizweb.dktcdn.net/thumb/1024x1024/100/357/932/products/0a905680-3f28-465f-86b0-69b44dc6f0a8.jpGỗv=1702458657457",
+  "created_at": "12/7/2023 19:13",
+  "updated_at": "12/7/2023 19:13",
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f354"
+  },
+  "ten": "Mô hình Naruto Đại Chiến",
+  "gia": 785000,
+  "so_luong_hien_con": 34,
+  "so_luong_da_ban": 19,
+  "nha_sx": "Bandai",
+  "chieu_cao": 145,
+  "chieu_rong": 85,
+  "chieu_dai": 185,
+  "chat_lieu": "Nhựa ABS",
+  "mo_ta": "Mô hình anime của các nhân vật yêu thích t?i Đại Chiến Ninja",
+  "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-ninkai-taisen-6941848247599__1__0085604d5b2648cb9e95f2010c722a89_master.jpg",
+  "created_at": "12/8/2023 19:13",
+  "updated_at": "12/8/2023 19:13",
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f355"
+  },
+  "ten": "Mô hình Cây Thông",
+  "gia": 300000,
+  "so_luong_hien_con": 25,
+  "so_luong_da_ban": 30,
+  "nha_sx": "Dell",
+  "chieu_cao": 500,
+  "chieu_rong": 80,
+  "chieu_dai": 140,
+  "chat_lieu": "Gốm",
+  "mo_ta": "Mô hình Cây Thông",
+  "hinh_anh": "https://bizweb.dktcdn.net/thumb/1024x1024/100/357/932/products/370225906-368469775557414-9098435064425770327-n.jpg",
+  "created_at": "12/9/2023 19:13",
+  "updated_at": "12/9/2023 19:13",
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f356"
+  },
+  "ten": "Mô hình Madara (Naruto)",
+  "gia": 255000,
+  "so_luong_hien_con": 32,
+  "so_luong_da_ban": 21,
+  "nha_sx": "Dell",
+  "chieu_cao": 150,
+  "chieu_rong": 54,
+  "chieu_dai": 150,
+  "chat_lieu": "Nhựa Poly",
+  "mo_ta": "Mô hình anime của nhân vật Madara",
+  "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-ninkai-taisen-6941848247599__3__7c0ce2a58a164e6fa3e6979fa65b4883_master.jpg",
+  "created_at": "12/10/2023 19:13",
+  "updated_at": "12/10/2023 19:13",
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f357"
+  },
+  "ten": "Mô hình Obito (Naruto)",
+  "gia": 375000,
+  "so_luong_hien_con": 36,
+  "so_luong_da_ban": 9,
+  "nha_sx": "Dell",
+  "chieu_cao": 122,
+  "chieu_rong": 39,
+  "chieu_dai": 122,
+  "chat_lieu": "Nhựa ABS",
+  "mo_ta": "Mô hình anime của nhân vật Obito",
+  "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-ninkai-taisen-6941848247599__4__fce9512354bf49a09407fef879cdff92_master.jpg",
+  "created_at": "12/11/2023 19:13",
+  "updated_at": "12/11/2023 19:13",
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f358"
+  },
+  "ten": "Mô hình Kakashi (Naruto)",
+  "gia": 950000,
+  "so_luong_hien_con": 31,
+  "so_luong_da_ban": 10,
+  "nha_sx": "Bandai",
+  "chieu_cao": 165,
+  "chieu_rong": 88,
+  "chieu_dai": 215,
+  "chat_lieu": "Gỗ",
+  "mo_ta": "Mô hình anime của nhân vật Kakashi",
+  "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-ninkai-taisen-6941848247599__6__c41604d1a3cc461ab9eb890ebea7401e_master.jpg",
+  "created_at": "12/12/2023 19:13",
+  "updated_at": "12/12/2023 19:13",
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f359"
+  },
+  "ten": "Mô hình Otsutsuki Kaguya (Naruto)",
+  "gia": 875000,
+  "so_luong_hien_con": 38,
+  "so_luong_da_ban": 21,
+  "nha_sx": "Bandai",
+  "chieu_cao": 245,
+  "chieu_rong": 95,
+  "chieu_dai": 345,
+  "chat_lieu": "Gỗ",
+  "mo_ta": "Mô hình anime của nhân vật Kaguya",
+  "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-ninkai-taisen-6941848247599__7__947305e877c44841a17a115434831853_master.jpg",
+  "created_at": "12/13/2023 19:13",
+  "updated_at": "12/13/2023 19:13",
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f35a"
+  },
+  "ten": "Mô hình Itachi (Naruto)",
+  "gia": 250000,
+  "so_luong_hien_con": 28,
+  "so_luong_da_ban": 26,
+  "nha_sx": "POP",
+  "chieu_cao": 40,
+  "chieu_rong": 50,
+  "chieu_dai": 48,
+  "chat_lieu": "Gỗ",
+  "mo_ta": "Mô hình anime của nhân vật Itachi",
+  "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-ninkai-taisen-6941848247599__8__5c93815ab95f481b8eba678b509cf1b4_master.jpg",
+  "created_at": "12/14/2023 19:13",
+  "updated_at": "12/14/2023 19:13",
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f35b"
+  },
+  "ten": "Mô hình Kakashi (Naruto)",
+  "gia": 350000,
+  "so_luong_hien_con": 35,
+  "so_luong_da_ban": 16,
+  "nha_sx": "POP",
+  "chieu_cao": 50,
+  "chieu_rong": 35,
+  "chieu_dai": 58,
+  "chat_lieu": "Nhựa Poly",
+  "mo_ta": "Mô hình anime của nhân vật Kakashi",
+  "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-ninkai-taisen-6941848247599__9__d0a4b388e0b743b48f9225b96b27a226_master.jpg",
+  "created_at": "12/15/2023 19:13",
+  "updated_at": "12/15/2023 19:13",
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f35c"
+  },
+  "ten": "Mô hình Sakura (Naruto)",
+  "gia": 355000,
+  "so_luong_hien_con": 37,
+  "so_luong_da_ban": 17,
+  "nha_sx": "POP",
+  "chieu_cao": 60,
+  "chieu_rong": 48,
+  "chieu_dai": 74,
+  "chat_lieu": "Gốm",
+  "mo_ta": "Mô hình anime của nhân vật Sakura",
+  "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-ninkai-taisen-6941848247599__10__ae38ceecb1f84f62bbcf0332fa8d43e0_master.jpg",
+  "created_at": "12/16/2023 19:13",
+  "updated_at": "12/16/2023 19:13",
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f35d"
+  },
+  "ten": "Mô hình Sasuke (Naruto)",
+  "gia": 360000,
+  "so_luong_hien_con": 39,
+  "so_luong_da_ban": 19,
+  "nha_sx": "POP",
+  "chieu_cao": 70,
+  "chieu_rong": 68,
+  "chieu_dai": 90,
+  "chat_lieu": "Nhựa PVC",
+  "mo_ta": "Mô hình anime của nhân vật Sasuke",
+  "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-ninkai-taisen-6941848247599__11__d93349ee784146ef924e8a39316030c9_master.jpg",
+  "created_at": "12/17/2023 19:13",
+  "updated_at": "12/17/2023 19:13",
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f35e"
+  },
+  "ten": "Mô hình Sakura (Naruto)",
+  "gia": 365000,
+  "so_luong_hien_con": 41,
+  "so_luong_da_ban": 18,
+  "nha_sx": "POP",
+  "chieu_cao": 94,
+  "chieu_rong": 45,
+  "chieu_dai": 85,
+  "chat_lieu": "Gỗ",
+  "mo_ta": "Mô hình anime của nhân vật Sakura",
+  "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-ninkai-taisen-6941848247599__12__13910495734d4931b7a561f8aa99112f_master.jpg",
+  "created_at": "12/18/2023 19:13",
+  "updated_at": "12/18/2023 19:13",
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f35f"
+  },
+  "ten": "Mô hình Obito (Naruto)",
+  "gia": 370000,
+  "so_luong_hien_con": 43,
+  "so_luong_da_ban": 6,
+  "nha_sx": "POP",
+  "chieu_cao": 84,
+  "chieu_rong": 35,
+  "chieu_dai": 48,
+  "chat_lieu": "Gỗ",
+  "mo_ta": "Mô hình anime của nhân vật Obito",
+  "hinh_anh": "https://product.hstatic.net/200000695275/product/naruto-ninkai-taisen-6941848247599__13__a81656fe0d514bc2850e9103c91931e5_master.jpg",
+  "created_at": "12/19/2023 19:13",
+  "updated_at": "12/19/2023 19:13",
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f360"
+  },
+  "ten": "Mô hình Big Max (Disney)",
+  "gia": 375000,
+  "so_luong_hien_con": 45,
+  "so_luong_da_ban": 18,
+  "nha_sx": "POP",
+  "chieu_cao": 740,
+  "chieu_rong": 98,
+  "chieu_dai": 56,
+  "chat_lieu": "Nhựa Poly",
+  "mo_ta": "Mô hình anime của nhân vật Big Max",
+  "hinh_anh": "https://product.hstatic.net/200000695275/product/disney-100th-anniversary-bell-6941848248602__2__4bba0e7cf86b4d5db9699170c58b6172_master.jpg",
+  "created_at": "12/20/2023 19:13",
+  "updated_at": "12/20/2023 19:13",
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f361"
+  },
+  "ten": "Mô hình Disney",
+  "gia": 380000,
+  "so_luong_hien_con": 45,
+  "so_luong_da_ban": 4,
+  "nha_sx": "POP",
+  "chieu_cao": 680,
+  "chieu_rong": 45,
+  "chieu_dai": 68,
+  "chat_lieu": "Nhựa Poly",
+  "mo_ta": "Mô hình anime của Disney",
+  "hinh_anh": "https://product.hstatic.net/200000695275/product/disney-100th-anniversary-bell-6941848248602__12__ee0ac2f907eb490ab9321a116302a0bd_master.jpg",
+  "created_at": "12/21/2023 19:13",
   "updated_at": {
-    "$date": "2023-12-14T13:04:02.230Z"
+    "$date": "2023-12-16T10:48:23.874Z"
   },
-  "created_at": {
-    "$date": "2023-12-14T12:55:50.895Z"
-  }
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f362"
+  },
+  "ten": "Mô hình Gấu (Disney)",
+  "gia": 385000,
+  "so_luong_hien_con": 49,
+  "so_luong_da_ban": 14,
+  "nha_sx": "POP",
+  "chieu_cao": 450,
+  "chieu_rong": 87,
+  "chieu_dai": 51,
+  "chat_lieu": "Gỗ",
+  "mo_ta": "Mô hình anime của Gấu Disney",
+  "hinh_anh": "https://product.hstatic.net/200000695275/product/disney-100th-anniversary-bell-6941848248602__3__0a23c8cd49fd4b1aa0bb5c270843b9d0_master.jpg",
+  "created_at": "12/22/2023 19:13",
+  "updated_at": "12/22/2023 19:13",
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f363"
+  },
+  "ten": "Mô hình Vịt (Disney)",
+  "gia": 390000,
+  "so_luong_hien_con": 51,
+  "so_luong_da_ban": 30,
+  "nha_sx": "POP",
+  "chieu_cao": 48,
+  "chieu_rong": 48,
+  "chieu_dai": 45,
+  "chat_lieu": "Gỗ",
+  "mo_ta": "Mô hình anime của Vịt Disney",
+  "hinh_anh": "https://product.hstatic.net/200000695275/product/disney-100th-anniversary-bell-6941848248602__4__c51f552bf9cb45b0855acfd2f096865d_master.jpg",
+  "created_at": "12/23/2023 19:13",
+  "updated_at": "12/23/2023 19:13",
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f364"
+  },
+  "ten": "Mô hình Thỏ (Disney)",
+  "gia": 395000,
+  "so_luong_hien_con": 53,
+  "so_luong_da_ban": 11,
+  "nha_sx": "POP",
+  "chieu_cao": 55,
+  "chieu_rong": 35,
+  "chieu_dai": 84,
+  "chat_lieu": "Nhựa ABS",
+  "mo_ta": "Mô hình anime của Thỏ Disney",
+  "hinh_anh": "https://product.hstatic.net/200000695275/product/disney-100th-anniversary-bell-6941848248602__6__ed228c1af63542ebb3c58506be105f11_master.jpg",
+  "created_at": "12/24/2023 19:13",
+  "updated_at": "12/24/2023 19:13",
+  "deleted_at": null
+},
+{
+  "_id": {
+    "$oid": "657d706ee85142aee0a8f365"
+  },
+  "ten": "Mô hình Mickey (Disney)",
+  "gia": 400000,
+  "so_luong_hien_con": 53,
+  "so_luong_da_ban": 12,
+  "nha_sx": "POP",
+  "chieu_cao": 155,
+  "chieu_rong": 89,
+  "chieu_dai": 89,
+  "chat_lieu": "Nhựa ABS",
+  "mo_ta": "Mô hình anime của Mickey Disney",
+  "hinh_anh": "https://product.hstatic.net/200000695275/product/disney-100th-anniversary-bell-6941848248602__5__82f4ff37029347bd83c7a5bbfb508a2b_master.jpg",
+  "created_at": "12/25/2023 19:13",
+  "updated_at": {
+    "$date": "2023-12-16T09:58:08.837Z"
+  },
+  "deleted_at": null
 }]

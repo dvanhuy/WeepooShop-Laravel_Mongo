@@ -27,6 +27,7 @@ class VNPAYController extends Controller
         if ($request['payments']=='cash'){
             try {
                 $bill['phuong_thuc_thanh_toan'] = "Tiền mặt khi nhận";
+                $bill['da_thanh_toan'] = "Chưa";
                 $bill->save();
                 $cartIDs = explode(',', $request->input('cartIDs'));
                 $carts = Cart::whereIn('_id',  $cartIDs)->get();
@@ -118,6 +119,7 @@ class VNPAYController extends Controller
             try {
                 $bill = Bill::find($request->vnp_TxnRef);
                 $bill['phuong_thuc_thanh_toan'] = "VNPAY";
+                $bill['da_thanh_toan'] = "Rồi";
                 $bill->save();
                 $cartIDs = explode(',', $bill['cardIDs']);
                 $carts = Cart::whereIn('_id',  $cartIDs)->get();

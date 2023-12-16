@@ -52,7 +52,7 @@
                             @endif
                         </div>
                         @if (array_key_exists('role', $user))
-                            <div>{{$user['role']}}</div>
+                            <div>{{$user['role'] ? $user['role'] : 'Không'}}</div>
                         @else
                             <div>Không</div>
                         @endif

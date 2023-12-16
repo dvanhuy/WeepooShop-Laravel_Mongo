@@ -25,10 +25,11 @@ class FigureController extends Controller
             //có tham số order -> nhấn vào nút tìm
             switch ($request->input("order")) {
                 case 'priceasc':
-                    $figures = $figures->orderByRaw('gia * 1 asc');
+                    $figures = $figures->orderBy('gia','asc');
+                // $figures = $figures->orderByRaw('gia * 1 asc');
                     break;
                 case 'pricedesc':
-                    $figures = $figures->orderByRaw('gia * 1 desc');
+                    $figures = $figures->orderBy('gia','desc');
                     break;
                 case 'oldest':
                     $figures = $figures->orderBy('updated_at', 'asc');
@@ -62,6 +63,9 @@ class FigureController extends Controller
     public function addFigure(AddFigureRequest $request)
     {
         $figure = $request->validated();
+        $figure['gia'] = (int)$figure['gia'];
+        $figure['so_luong_hien_con'] = (int)$figure['so_luong_hien_con'];
+        $figure['so_luong_da_ban'] = (int)$figure['so_luong_hien_con'];
         if ($request->hasFile('hinh_anh')) {
             $uploadedFileUrl = Cloudinary::upload($request->file('hinh_anh')->getRealPath())->getSecurePath();
             // Cloudinary::uploadApi()
@@ -92,7 +96,7 @@ class FigureController extends Controller
         if ($request->hasFile('hinh_anh')) {
             //xóa ảnh cũ
             $old_image_path = $figureID['hinh_anh'];
-            if($old_image_path != null && $old_image_path != 'images/emptyFigure.webp') {
+            if($old_image_path != null && $old_image_path != 'images/emptyFigure.webp' && !str_contains($old_image_path,"http")) {
                 preg_match("/upload\/(?:v\d+\/)?([^\.]+)/", $old_image_path, $matches);
                 Cloudinary::uploadApi()->destroy($matches[1]);
             }
