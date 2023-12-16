@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\Admin\UpdateUserRequest;
 use App\Models\Bill;
+use App\Models\BillDetail;
 use App\Models\Figure;
 use App\Models\User;
 use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
@@ -125,5 +126,33 @@ class AdminController extends Controller
         $bills=$bills->orderBy('updated_at', 'desc');
         $bills=$bills->paginate(15);
         return view("Admin.manageBills",["bills"=> $bills]);
+    }
+
+    public function getFormUpdateBill(Bill $billID){
+        $details = BillDetail::where("id_bill",$billID->_id)->get();
+        $data= [];
+        foreach ($details as $key => $detail) {
+            $figure = Figure::find($detail->id_figure);
+            $detail['billdetail_id'] = $detail["_id"];
+            $data[$key] = ($detail->toArray()+$figure->toArray());
+        }
+        return view('Admin.updateBill',["details"=>$data,"bill"=>$billID]);
+    }
+
+    public function updateBill(Bill $billID,Request $request)
+    {
+        $billID['trang_thai'] = $request['trang_thai'];
+        $billID['da_thanh_toan'] = $request['da_thanh_toan'];
+        $billID['phuong_thuc_thanh_toan'] = $request['phuong_thuc_thanh_toan'];
+        $status = $billID->save();
+        if ($status) {
+            return redirect()->back()->with([
+                'status' => 'Đã cập nhật hóa đơn thành công'
+            ]);
+        }
+        return redirect()->back()->with([
+            'status' => 'Cập nhật thất bại'
+        ]);
+        
     }
 }

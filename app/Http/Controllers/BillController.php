@@ -22,6 +22,6 @@ class BillController extends Controller
             $detail['billdetail_id'] = $detail["_id"];
             $data[$key] = ($detail->toArray()+$figure->toArray());
         }
-        return view('Bill.detail',["details"=>$data]);
+        return view('Bill.detail',["details"=>$data,"bill"=>$billID]);
     }
 }

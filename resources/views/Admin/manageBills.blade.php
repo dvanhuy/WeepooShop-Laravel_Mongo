@@ -52,7 +52,7 @@
                         <div>{{ $bill['trang_thai'] }}</div>
                         <div class="thaotac">
                             <a href="{{ route('bill.detail',$bill['_id']) }}"><i class="fa-solid fa-eye"></i></a>
-                            <a href="{{ route('manage.get_form_update_user',$bill['_id']) }}"><i class="fa-solid fa-pen"></i></a>
+                            <a href="{{ route('manage.get_form_update_bill',$bill['_id']) }}"><i class="fa-solid fa-pen"></i></a>
                             <!-- <a href="{{ route('manage.delete_user',$bill['_id']) }}" onclick="return confirm('Bạn có chắn muốn xóa không?');"><i class="fa-solid fa-trash"></i></a> -->
                         </div>
                     </div>

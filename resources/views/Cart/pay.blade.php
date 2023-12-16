@@ -49,7 +49,7 @@
             <div class="payments_choose">
                 <div>
                     <input type="radio" id="cash" name="payments" value="cash" checked>
-                    <label for="cash"><div>Thanh toán tiến mặt</div></label>
+                    <label for="cash"><div>Thanh toán tiền mặt</div></label>
                 </div>
                 <div>
                     <input type="radio" id="vnpay" name="payments" value="vnpay">

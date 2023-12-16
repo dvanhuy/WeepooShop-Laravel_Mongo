@@ -12,14 +12,41 @@
     h3{
         margin: 0;
     }
+    .status{
+        color: red;
+        font-size: 1.05rem;
+    }
 </style>
 
 <body style="text-align: center;">
+    <form action="{{ route('manage.update_bill',$bill['_id']) }}" method="post">
+    @csrf
     <div class="content">
-        <h3>Phương thức thanh toán : {{ $bill['phuong_thuc_thanh_toan'] }}</h3>
-        <h3>Đã thanh toán : {{ $bill['da_thanh_toan'] }}</h3>
-        <h3>Id người mua : {{ $bill['id_user'] }}</h3>
+        @if(Session::has('status'))
+            <div class="status">{{ session('status') }}</div>
+        @endif
         <h3>Trạng thái : {{ $bill['trang_thai'] }}</h3>
+        <select name="trang_thai" id="trang_thai" style="font-size: 17px; padding: 5px;">
+            <option value="Chờ duyệt">Chờ duyệt</option>
+            <option value="Đang giao">Đang giao</option>
+            <option value="Đã giao">Đã giao</option>
+        </select>
+        <h3>Đã thanh toán : {{ $bill['da_thanh_toan'] }}</h3>
+        <select name="da_thanh_toan" id="da_thanh_toan" style="font-size: 17px; padding: 5px;">
+            <option value="Chưa">Chưa</option>
+            <option value="Rồi">Rồi</option>
+        </select>
+        <h3>Phương thức thanh toán : {{ $bill['phuong_thuc_thanh_toan'] }}</h3>
+        <select name="phuong_thuc_thanh_toan" id="phuong_thuc_thanh_toan" style="font-size: 17px; padding: 5px;">
+            <option value="Tiền mặt khi nhận">Tiền mặt khi nhận</option>
+            <option value="VNPAY">VNPAY</option>
+        </select>
+        <script>
+            document.getElementById('trang_thai').value = "{{ $bill['trang_thai'] }}"
+            document.getElementById('da_thanh_toan').value = "{{ $bill['da_thanh_toan'] }}"
+            document.getElementById('phuong_thuc_thanh_toan').value = "{{ $bill['phuong_thuc_thanh_toan'] }}"
+        </script>
+        <h3>Id người mua : {{ $bill['id_user'] }}</h3>
         <h2>Thông tin đã chọn</h2>
         <div class="item-title">
             <div>Sản phẩm</div>
@@ -66,10 +93,9 @@
         <input type="text" class="inputtext" name="sodienthoai" disabled  value="{{ $bill['so_dien_thoai'] }}">
         <h2>Địa chỉ giao hàng</h2>
         <input type="text" class="inputtext" name="diachi" disabled value="{{ $bill['dia_chi'] }}">
-        <a href="{{ url()->previous() }}" style="text-decoration: none;" >
-            <button class="buttonsubmit">Trở về</button>
-        </a>
+        <button class="buttonsubmit" style="cursor: pointer;">Cập nhật</button>
+        <span>Hoặc <a href="{{ route('manage.get_bill_form') }}">Trờ về</a></span>
     </div>
+    </form>
 </body>
-
 </html>

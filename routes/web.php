@@ -106,8 +106,8 @@ Route::group(['middleware'=>'userLogin'],function (){
         });
         Route::group(['prefix'=> 'manage/bills'], function () {
             Route::get('', [AdminController::class,'getBillsForm'])->name('manage.get_bill_form');
-            Route::get('update/{userID}', [AdminController::class,'getFormUpdateBill'])->name('manage.get_form_update_bill');
-            Route::post('update/{userID}', [AdminController::class,'updateBill'])->name('manage.update_bill');
+            Route::get('update/{billID}', [AdminController::class,'getFormUpdateBill'])->name('manage.get_form_update_bill');
+            Route::post('update/{billID}', [AdminController::class,'updateBill'])->name('manage.update_bill');
         });
     });
 });
