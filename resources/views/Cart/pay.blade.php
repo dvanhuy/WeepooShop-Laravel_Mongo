@@ -6,6 +6,11 @@
     <title>Thanh toán</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="{{ asset('css/get_form_pay.css')}}">
+    <style>
+        .error{
+            color: red;
+        }
+    </style>
 </head>
 <body style="text-align: center;">
     <form action="{{route('vnpay.pay')}}" method="get">
@@ -51,6 +56,16 @@
                     <label for="vnpay"><div>Thanh toán VNPAY</div></label>
                 </div>
             </div>
+            <h1>Số điện thoại liên lạc:</h1>
+            <input type="text" class="inputtext" name="sodienthoai" placeholder="Nhập số điện thoại ...">
+            @error('sodienthoai')
+                <div class="error">{{ $message }}</div>
+            @enderror
+            <h1>Địa chỉ giao hàng</h1>
+            <input type="text" class="inputtext" name="diachi" placeholder="Nhập địa chỉ ...">
+            @error('diachi')
+                <div class="error">{{ $message }}</div>
+            @enderror
             <button class="buttonsubmit">Xác nhận</button>
             <span class="backbutton">
                 Hoặc <a href="{{ route('cart.index') }}">Trở về</a>

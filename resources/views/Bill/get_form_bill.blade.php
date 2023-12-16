@@ -17,6 +17,9 @@
     .detail:hover{
         background-color: #C6C6C6;
     }
+    .box_gird{
+        grid-template-columns:1.5fr repeat(7,1fr);
+    }
 </style>
 <body>
     @include('header')
@@ -37,19 +40,21 @@
 
     <main>
         <div class="header_tab box_gird">
-            <div>Hóa đơn</div>
-            <div>Thời gian thanh toán</div>
-            <div>Trạng thái</div>
+            <div>Mã hóa đơn</div>
+            <div>Địa chỉ giao hàng</div>
+            <div>Số điện thoại đặt</div>
+            <div>Phương thức thanh toán</div>
+            <div>Thời gian đặt</div>
             <div>Tổng tiền</div>
+            <div>Trạng thái</div>
             <div>Thao tác</div>
         </div>
         @foreach($bills as $bill)
         <div class="item_figure box_gird" id="{{ $bill->_id }}">
-            <div class="info_item">
-                <div class="img_item">
-                    <img src="{{ $bill->hinh_anh }}" >
-                </div>
-            </div>
+            <div> {{ $bill->_id }} </div>
+            <div> {{ $bill->dia_chi }}</div>
+            <div> {{ $bill->so_dien_thoai }}</div>
+            <div> {{ $bill->phuong_thuc_thanh_toan }}</div>
             <div> {{ $bill->updated_at }}</div>
             <div> {{ $bill->trang_thai }}</div>
             <div class="price" >{{ number_format($bill->tong_tien, 0, ',', '.') }} VNĐ</div>

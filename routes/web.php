@@ -77,7 +77,8 @@ Route::group(['middleware'=>'userLogin'],function (){
         Route::get('pay', [CartController::class,'getFormPay'])->name('cart.get_form_pay');
     });
 
-
+    
+    Route::get('vnpay/result', [VNPAYController::class,'result'])->name('vnpay.result');
     Route::get('vnpay/pay', [VNPAYController::class,'pay'])->name('vnpay.pay');
     Route::get('/vnpay_php/checkout',[VNPAYController::class,'checkout'])->name('vnpay.checkout');
 

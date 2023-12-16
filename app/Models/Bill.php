@@ -19,6 +19,8 @@ class Bill extends Eloquent
         "trang_thai",
         "id_user",
         "hinh_anh",
-        "tong_tien"
+        "tong_tien",
+        "phuong_thuc_thanh_toan",
+        "cardIDs"
     ] ;
 }

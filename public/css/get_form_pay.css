@@ -124,3 +124,8 @@ body{
 .backbutton{
     font-size: 1.1rem;
 }
+
+.inputtext{
+    font-size: 1.05rem;
+    padding: 5px 10px;
+}
