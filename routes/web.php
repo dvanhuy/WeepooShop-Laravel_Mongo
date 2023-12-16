@@ -104,5 +104,10 @@ Route::group(['middleware'=>'userLogin'],function (){
             Route::post('update/{userID}', [AdminController::class,'updateUser'])->name('manage.update_user');
             Route::get('delete/{userID}', [AdminController::class,'deleteUser'])->name('manage.delete_user');
         });
+        Route::group(['prefix'=> 'manage/bills'], function () {
+            Route::get('', [AdminController::class,'getBillsForm'])->name('manage.get_bill_form');
+            Route::get('update/{userID}', [AdminController::class,'getFormUpdateBill'])->name('manage.get_form_update_bill');
+            Route::post('update/{userID}', [AdminController::class,'updateBill'])->name('manage.update_bill');
+        });
     });
 });

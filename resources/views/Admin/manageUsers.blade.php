@@ -51,7 +51,11 @@
                                 <img src="{{ asset($user['avatar']) }}" >
                             @endif
                         </div>
-                        <div>Role</div>
+                        @if (array_key_exists('role', $user))
+                            <div>{{$user['role']}}</div>
+                        @else
+                            <div>Không</div>
+                        @endif
                         <div class="thaotac">
                             <!-- <a ><i class="fa-solid fa-eye"></i></a> -->
                             <a href="{{ route('manage.get_form_update_user',$user['_id']) }}"><i class="fa-solid fa-pen"></i></a>

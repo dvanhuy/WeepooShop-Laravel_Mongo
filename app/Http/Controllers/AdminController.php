@@ -3,12 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\Admin\UpdateUserRequest;
+use App\Models\Bill;
 use App\Models\Figure;
 use App\Models\User;
 use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Storage;
 
 class AdminController extends Controller
 {
@@ -65,7 +64,6 @@ class AdminController extends Controller
     }
     public function getUsersForm(Request $request){
         $users= User::getQuery()->where('deleted_at', null);
-
         if($request->has("search")){
             // có mệnh đề where
             $users =  $users->where('email', 'like', '%'.$request->input("search").'%');
@@ -114,5 +112,18 @@ class AdminController extends Controller
         return redirect()->back()->with([
             'status' => 'Xóa thất bại'
         ]);
+    }
+    
+    public function getBillsForm(Request $request)
+    {
+        $bills= Bill::getQuery();
+
+        // if($request->has("search")){
+        //     // có mệnh đề where
+        //     $users =  $users->where('email', 'like', '%'.$request->input("search").'%');
+        // }
+        $bills=$bills->orderBy('updated_at', 'desc');
+        $bills=$bills->paginate(15);
+        return view("Admin.manageBills",["bills"=> $bills]);
     }
 }

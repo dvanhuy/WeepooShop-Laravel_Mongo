@@ -20,8 +20,8 @@
                     <div class="text-menu">Quản lý người dùng</div>
                 </li>
             </a>
-            <a >
-                <li>
+            <a href="{{ route('manage.get_bill_form') }}">
+                <li class="{{ Route::currentRouteName() == 'manage.get_bill_form' ? 'active' : ''  }}">
                     <div class="icon">
                         <i class="fa-solid fa-wallet"></i>
                     </div>
