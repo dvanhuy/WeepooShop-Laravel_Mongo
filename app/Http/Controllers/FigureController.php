@@ -65,7 +65,7 @@ class FigureController extends Controller
         $figure = $request->validated();
         $figure['gia'] = (int)$figure['gia'];
         $figure['so_luong_hien_con'] = (int)$figure['so_luong_hien_con'];
-        $figure['so_luong_da_ban'] = (int)$figure['so_luong_hien_con'];
+        $figure['so_luong_da_ban'] = (int)$figure['so_luong_da_ban'];
         if ($request->hasFile('hinh_anh')) {
             $uploadedFileUrl = Cloudinary::upload($request->file('hinh_anh')->getRealPath())->getSecurePath();
             // Cloudinary::uploadApi()
