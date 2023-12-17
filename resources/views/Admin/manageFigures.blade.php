@@ -61,6 +61,11 @@
                     @endforeach
                 </div>
                 {{ $figures->appends(request()->except('page'))->onEachSide(1)->links('vendor.pagination.custom_pagination') }}
+                <div class="trash-button" style="right: 60px;">
+                    <a href="{{route('figures.export')}}">
+                        <i class="fa-solid fa-download"></i>
+                    </a>
+                </div>
                 <div class="trash-button">
                     <a href="{{route('manage.get_trash_figures_form')}}">
                         <i class="fa-solid fa-trash-can-arrow-up"></i>

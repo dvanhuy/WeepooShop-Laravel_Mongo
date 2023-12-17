@@ -154,4 +154,8 @@ class FigureController extends Controller
             'status' => 'Xóa thất bại'
         ]);
     }
+    public function export(){
+        $data = Figure::all();
+        return response()->json($data);
+    }
 }
