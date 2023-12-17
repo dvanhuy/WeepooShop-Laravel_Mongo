@@ -4,9 +4,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Weepoo Shop</title>
-    
+    <link rel="stylesheet" href="{{ asset('css/get_list_figure.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-
+<style>
+    .top-figure{
+        margin-top: 20px;
+        position: relative;
+    }
+    .banner{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .show-all{
+        text-decoration: none;
+        position: absolute;
+        right: 50px;
+        top: 0;
+    }
+    .title{
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    body{
+        margin-bottom: 100px;
+    }
+</style>
 <body>
     @include('header')
     <form action="{{ route('figures.index') }}">
@@ -17,8 +45,39 @@
             <input type="submit" value="Tìm kiếm" onclick="return redirectToList(event)">
         </div>
     </form>
-    <h2>homepage</h2>
-    <a href="{{ route('figures.index') }}">Xem danh sách đầy đủ</a>
+    <div class="banner">
+        <img src="https://file.hstatic.net/1000160337/collection/4_5e0bca7ec7994b62ba3745d62ff271c0.jpg" alt="">
+    </div>
+    <div class="top-figure">
+        <div class="title">
+            Mô hình bán chạy nhất
+        </div>
+        <a class="show-all" href="{{ route('figures.index') }}">
+            <div class="">Xem thêm <i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+        <div class="container_main">
+            @for ($i = 0; $i < count($figures); $i++)
+            <a class="container_main_item" href="{{ route('figures.showdetail',$figures[$i]['_id']) }}">
+                <div class="item_image">
+                    @if (str_contains($figures[$i]['hinh_anh'], 'http'))
+                        <img src="{{ $figures[$i]['hinh_anh'] }}" >
+                    @else
+                        <img src="{{ asset($figures[$i]['hinh_anh']) }}" >
+                    @endif
+                </div>
+                <div class="item_name">
+                    {{$figures[$i]['ten']}}
+                </div>
+                <div class="item_price">
+                    {{ number_format($figures[$i]['gia'], 0, ',', '.') }} VNĐ
+                </div>
+                <div class="item_subprice">
+                    {{$figures[$i]['updated_at']}}
+                </div>
+            </a>
+            @endfor
+        </div>
+    </div>
 </body>
 <script>
     function redirectToList(event){

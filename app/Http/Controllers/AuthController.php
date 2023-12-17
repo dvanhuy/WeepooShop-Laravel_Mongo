@@ -6,6 +6,7 @@ use App\Http\Requests\Auth\ForgotPassRequest;
 use App\Http\Requests\Auth\LoginRequest;
 use App\Http\Requests\Auth\PasswordResetRequest;
 use App\Http\Requests\Auth\RegisterRequest;
+use App\Models\Figure;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -62,7 +63,8 @@ class AuthController extends Controller
 
     public function getHomePage()
     {
-        return view('homepage');
+        $figures= Figure::where('deleted_at', null)->orderBy('so_luong_da_ban', 'desc')->limit(6)->get();
+        return view('homepage',["figures"=>$figures]);
     }
 
     public function logout()
