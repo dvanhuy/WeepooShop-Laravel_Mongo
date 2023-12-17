@@ -27,10 +27,10 @@
                             <input type="text" name="search" id="" placeholder="Tìm kiếm email ...">
                         </form>
                     </div>
-                    <a href="{{ route('figures.get_form_add') }}" class="button-add">
+                    <!-- <a href="{{ route('figures.get_form_add') }}" class="button-add">
                         <i class="fa-solid fa-plus"></i>
                         Thêm mới
-                    </a>
+                    </a> -->
                 </div>
                 <div class="table-data">
                     <div class="title-table">
