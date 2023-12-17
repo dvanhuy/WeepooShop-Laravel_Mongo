@@ -50,7 +50,7 @@
         <h2>Phương thức thanh toán</h1>
         <div class="payments_choose">
             <div>
-                <input type="radio" id="cash" disabled name="payments" value="cash" checked>
+                <input type="radio" id="cash" disabled name="payments" value="cash">
                 <label for="cash">
                     <div>Thanh toán tiền mặt</div>
                 </label>
@@ -62,6 +62,14 @@
                 </label>
             </div>
         </div>
+        <script>
+            if ("{{ $bill['phuong_thuc_thanh_toan'] }}" == "VNPAY"){
+                document.getElementById('vnpay').checked = true
+            }
+            else{
+                document.getElementById('cash').checked = true
+            }
+        </script>
         <h2>Số điện thoại liên lạc:</h2>
         <input type="text" class="inputtext" name="sodienthoai" disabled  value="{{ $bill['so_dien_thoai'] }}">
         <h2>Địa chỉ giao hàng</h2>
