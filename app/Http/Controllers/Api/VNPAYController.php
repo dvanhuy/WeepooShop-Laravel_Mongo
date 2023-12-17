@@ -23,7 +23,7 @@ class VNPAYController extends Controller
             'dia_chi' => $request['diachi'],
             'tong_tien' => $request['totalmoney'],
             'cardIDs' => $request->input('cartIDs'),
-            'phuong_thuc_thanh_toan' => "Tiền mặt khi nhận",
+            'phuong_thuc_thanh_toan' => "VNPAY",
             'da_thanh_toan' =>"Chưa",
         ]);
         if ($request['payments']=='cash'){
